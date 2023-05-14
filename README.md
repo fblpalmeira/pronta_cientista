@@ -11,6 +11,12 @@ Figura 1.  Áreas do conhecimento necessárias para analisar dados de biodiversi
 
 Neste caso, a linguagem R foi feita especificamente para oferecer um conjunto integrado de recursos para a manipulação de dados, análise estatística e visualização gráfica (https://www.r-project.org/about.html) Também possibilita a reprodutibilidade dos resultados garantindo a transparência das análises. Desta forma, o uso da linguagem R tem sido extremamente útil para analisar e visualizar toda essa quantidade de dados disponíveis, além de possibilitar uma maior transparência e reprodutibilidade no processo de análise. Também é importante realçar que o trabalho com análise e visualização de dados de biodiversidade pode subsidiar o planejamento de ações de conservação baseadas em evidências.
 
+MATERIAIS:
+
+- [Ementa do curso `.pdf`]()
+
+- [Tutorial do RStudio Cloud `.pdf`](https://github.com/fblpalmeira/SBMGC_2021/blob/main/doc/2_Tutorial_RStudioCloud_Pronta_Cientista_2021.pdf)
+- 
 EXERCÍCIO: O objetivo da nossa aula prática é construir um gráfico que representa a diversidade e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo (Aula 2).
 
 - [Código `.R`]()
