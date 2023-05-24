@@ -23,6 +23,10 @@ EXERCÍCIO: O objetivo da nossa aula prática é construir um gráfico que repre
 
 - [Planilha `.csv`]()
 
-BIBLIOGRAFIA ADICIONAL:
+BIBLIOGRAFIA BÁSICA:
 
-- [Análises Ecológicas no R`.html](https://analises-ecologicas.com/index.html)
+- [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R`.html](https://analises-ecologicas.netlify.app/cap11.html)
+
+BIBLIOGRAFIA COMPLEMENTAR:
+
+- [Livro completo: Análises Ecológicas no R`.html](https://analises-ecologicas.com/index.html)
