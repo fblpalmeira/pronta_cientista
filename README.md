@@ -16,9 +16,13 @@ MATERIAIS:
 - [Ementa do curso `.pdf`]()
 
 - [Tutorial do RStudio Cloud `.pdf`](https://github.com/fblpalmeira/SBMGC_2021/blob/main/doc/2_Tutorial_RStudioCloud_Pronta_Cientista_2021.pdf)
-- 
+ 
 EXERCÍCIO: O objetivo da nossa aula prática é construir um gráfico que representa a diversidade e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo (Aula 2).
 
 - [Código `.R`]()
 
 - [Planilha `.csv`]()
+
+BIBLIOGRAFIA ADICIONAL:
+
+- [Análises Ecológicas no R`.html e .pdf`](https://analises-ecologicas.com/index.html)
