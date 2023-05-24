@@ -25,4 +25,4 @@ EXERCÍCIO: O objetivo da nossa aula prática é construir um gráfico que repre
 
 BIBLIOGRAFIA ADICIONAL:
 
-- [Análises Ecológicas no R`.html e .pdf`](https://analises-ecologicas.com/index.html)
+- [Análises Ecológicas no R`.html](https://analises-ecologicas.com/index.html)
