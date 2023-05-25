@@ -17,11 +17,18 @@ MATERIAIS:
 
 - [Tutorial do RStudio Cloud `.pdf`](https://github.com/fblpalmeira/SBMGC_2021/blob/main/doc/2_Tutorial_RStudioCloud_Pronta_Cientista_2021.pdf)
  
-EXERCÍCIO: O objetivo da nossa aula prática é construir um gráfico que representa a diversidade e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo (Aula 2).
+EXERCÍCIO: O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
+
+Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerda e a outra do lado direito, com uma distância entra elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
+
 
 - [Código `.R`]()
 
 - [Planilha `.csv`]()
+
+-----
+
+Roteiro para elaborar um Projeto de Pesquisa
 
 COMO FAZER UMA PESQUISA?
 
@@ -54,8 +61,14 @@ Quando possível, utilizar fontes bibliográficas seguras que costumam ser encon
 
 BANCO DE DADOS ONLINE:
 
-- SpeciesLink - [SpeciesLink `.html`](https://specieslink.net/)
+- SpeciesLink - [SpeciesLink `.html` (http://www.splink.cria.org.br/)
 - GBIF - [GBIF `.html`](https://www.gbif.org/)
+
+BANCO DE DADOS GEOESPACIAIS
+
+- IBGE - [IBGE `.html` ](https://www.ibge.gov.br/geociencias/downloads-geociencias.html)
+-
+-
 
 ...
 
