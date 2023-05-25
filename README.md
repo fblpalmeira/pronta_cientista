@@ -42,9 +42,9 @@ BIBLIOGRAFIA COMPLEMENTAR:
 
 SITES INTERESSANTES:
 
-- Nuvem de palavras - [Word Cloud`.html](https://www.wordclouds.com)
+- Nuvem de palavras - [Word Cloud`.html`](https://www.wordclouds.com)
 
-- Nuvem de palavras online - [Mentimeter`.html](https://www.mentimeter.com/pt-BR/features/word-cloud)
+- Nuvem de palavras online - [Mentimeter`.html`](https://www.mentimeter.com/pt-BR/features/word-cloud)
 
 SITES DE PESQUISA:
 
