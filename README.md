@@ -42,22 +42,23 @@ BIBLIOGRAFIA COMPLEMENTAR:
 
 SITES INTERESSANTES:
 
-- Nuvem de palavras [Word Cloud`.html](https://www.wordclouds.com)
+- Nuvem de palavras - [Word Cloud`.html](https://www.wordclouds.com)
 
-- Nuvem de palavras online [Mentimeter`.html](https://www.mentimeter.com/pt-BR/features/word-cloud)
+- Nuvem de palavras online - [Mentimeter`.html](https://www.mentimeter.com/pt-BR/features/word-cloud)
 
 SITES DE PESQUISA:
 
 Quando possível, utilizar fontes bibliográficas seguras que costumam ser encontradas em sites com a extensão .edu, .gov, .org, .br (sem .com).
 
-- [Scielo .html](https://www.scielo.br/)
+- Scielo - [Scielo .html](https://www.scielo.br/)
 
 BANCO DE DADOS ONLINE:
 
-- SpeciesLink [SpeciesLink](https://specieslink.net/)
-- GBIF [GBIF](https://www.gbif.org/)
+- SpeciesLink - [SpeciesLink](https://specieslink.net/)
+- GBIF - [GBIF](https://www.gbif.org/)
 
 ...
+
 - Plágio;
 - Entender as camadas da pesquisa;
 
