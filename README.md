@@ -34,11 +34,11 @@ ROTEIRO PARA ELABORAR UM PROJETO DE PESQUISA:
 
 BIBLIOGRAFIA BÁSICA:
 
-- [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R`.html](https://analises-ecologicas.netlify.app/cap11.html)
+- [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R`.html`](https://analises-ecologicas.netlify.app/cap11.html)
 
 BIBLIOGRAFIA COMPLEMENTAR:
 
-- [Livro completo: Análises Ecológicas no R`.html](https://analises-ecologicas.com/index.html)
+- [Livro completo: Análises Ecológicas no R`.html`](https://analises-ecologicas.com/index.html)
 
 SITES INTERESSANTES:
 
