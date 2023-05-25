@@ -23,6 +23,15 @@ EXERCÍCIO: O objetivo da nossa aula prática é construir um gráfico que repre
 
 - [Planilha `.csv`]()
 
+COMO FAZER UMA PESQUISA?
+
+ROTEIRO PARA ELABORAR UM PROJETO DE PESQUISA:
+
+- Introdução/Justificativa: Fazer uma boa pergunta e contextualizar com embasamento teórico;
+- Métodos: Adotar um método robusto (desenho amostral ou delineamento amostral);
+- Resultados: Análise e visualização dos dados, interpretação e comunicação dos resultados;
+- Discussão/Conclusão: Achados, aplicações e novas perguntas que deverão ser respondidas;
+
 BIBLIOGRAFIA BÁSICA:
 
 - [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R`.html](https://analises-ecologicas.netlify.app/cap11.html)
@@ -30,3 +39,26 @@ BIBLIOGRAFIA BÁSICA:
 BIBLIOGRAFIA COMPLEMENTAR:
 
 - [Livro completo: Análises Ecológicas no R`.html](https://analises-ecologicas.com/index.html)
+
+SITES INTERESSANTES:
+
+- Nuvem de palavras [Word Cloud`.html](https://www.wordclouds.com)
+
+- Nuvem de palavras online [Mentimeter`.html](https://www.mentimeter.com/pt-BR/features/word-cloud)
+
+SITES DE PESQUISA:
+
+Quando possível, utilizar fontes bibliográficas seguras que costumam ser encontradas em sites com a extensão .edu, .gov, .org, .br (sem .com).
+
+- [Scielo .html](https://www.scielo.br/)
+
+BANCO DE DADOS ONLINE:
+
+- [SpeciesLink](https://specieslink.net/)
+- [GBIF]([https://specieslink.net/](https://www.gbif.org/)
+
+...
+- Plágio;
+- Entender as camadas da pesquisa;
+
+"Lembre-se que você está alimentando o algoritmo! O algortimo é aquilo que ele come. O algortimo é um dragão que não podemos eliminar, mas podemos controlar."
