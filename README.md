@@ -54,8 +54,8 @@ Quando possível, utilizar fontes bibliográficas seguras que costumam ser encon
 
 BANCO DE DADOS ONLINE:
 
-- [SpeciesLink](https://specieslink.net/)
-- [GBIF]([https://specieslink.net/](https://www.gbif.org/)
+- SpeciesLink [SpeciesLink](https://specieslink.net/)
+- GBIF [GBIF]([https://specieslink.net/](https://www.gbif.org/)
 
 ...
 - Plágio;
