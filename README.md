@@ -50,7 +50,7 @@ SITES DE PESQUISA:
 
 Quando possível, utilizar fontes bibliográficas seguras que costumam ser encontradas em sites com a extensão .edu, .gov, .org, .br (sem .com).
 
-- Scielo - [Scielo .html](https://www.scielo.br/)
+- Scielo - [Scielo `.html`](https://www.scielo.br/)
 
 BANCO DE DADOS ONLINE:
 
