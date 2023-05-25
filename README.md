@@ -34,17 +34,17 @@ ROTEIRO PARA ELABORAR UM PROJETO DE PESQUISA:
 
 BIBLIOGRAFIA BÁSICA:
 
-- [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R`.html`](https://analises-ecologicas.netlify.app/cap11.html)
+- [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap11.html)
 
 BIBLIOGRAFIA COMPLEMENTAR:
 
-- [Livro completo: Análises Ecológicas no R`.html`](https://analises-ecologicas.com/index.html)
+- [Livro completo: Análises Ecológicas no R `.html`](https://analises-ecologicas.com/index.html)
 
 SITES INTERESSANTES:
 
-- Nuvem de palavras - [Word Cloud`.html`](https://www.wordclouds.com)
+- Nuvem de palavras - [Word Cloud `.html`](https://www.wordclouds.com)
 
-- Nuvem de palavras online - [Mentimeter`.html`](https://www.mentimeter.com/pt-BR/features/word-cloud)
+- Nuvem de palavras online - [Mentimeter `.html`](https://www.mentimeter.com/pt-BR/features/word-cloud)
 
 SITES DE PESQUISA:
 
@@ -54,8 +54,8 @@ Quando possível, utilizar fontes bibliográficas seguras que costumam ser encon
 
 BANCO DE DADOS ONLINE:
 
-- SpeciesLink - [SpeciesLink](https://specieslink.net/)
-- GBIF - [GBIF](https://www.gbif.org/)
+- SpeciesLink - [SpeciesLink `.html`](https://specieslink.net/)
+- GBIF - [GBIF `.html`](https://www.gbif.org/)
 
 ...
 
