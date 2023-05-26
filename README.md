@@ -27,6 +27,46 @@ Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parce
 - [Planilha `.csv`]()
 
 -----
+## Prática
+
+Esta prática tem três etapas principais: 
+
+- Preparando os dados (Carregar, manipular e limpar o arquivo de dados);
+
+- Análise de dados; e,
+ 
+- Visualização de resultados.  
+
+## Preparando os dados
+
+Carregar, manipular e limpar o arquivo de dados no `R`:
+
+``` r
+#######################
+# Preparando os dados #
+#######################
+
+Sys.setlocale("LC_ALL","pt_BR.UTF-8")
+
+library (readxl) # Abrir o pacote que lê arquivos do Excel (extensões .xls ou .xlsx)
+library(dplyr) # Abrir o pacote para manipular os dados 
+
+y1 <- read_excel("parcela_lado_esquerdo.xlsx", na = "-") # Criar um objeto (ex.: y1) que armazena a planilha do Excel
+y1 <- y1 %>% mutate (Lado = "Esquerdo", .after=ID) # Criar uma nova coluna chamada "Lado" e posicioná-la depois da coluna ID
+y1 <- y1 %>% mutate (Parcela = "P1", .after=ID) # Criar uma nova coluna chamada "Parcela" e posicioná-la depois da coluna ID 
+
+y2 <- read_excel("parcela_lado_direito.xlsx", na = "-")
+y2 <- y2 %>% mutate (Lado = "Direito", .after=ID)
+y2 <- y2 %>% mutate (Parcela = "P2", .after=ID)
+
+y3 <- rbind(y1, y2)
+```
+
+
+
+
+
+-----
 
 Roteiro para elaborar um Projeto de Pesquisa
 
