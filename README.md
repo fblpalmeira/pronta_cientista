@@ -1,5 +1,7 @@
 # Pronta pra ser Cientista 2023, 4a. edição
 
+https://posit.cloud/content/2370311
+
 ## Aula 4, Ciência de Dados
 Francesca B. L. Palmeira, francesca@alumni.usp.br 
 
