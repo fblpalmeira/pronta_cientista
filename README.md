@@ -73,6 +73,7 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 Carregar e manipular os dados no `R`:
 
 ``` r
+
 Sys.setlocale("LC_ALL","pt_BR.UTF-8")
 
 ###############
@@ -247,10 +248,9 @@ ggiNEXT(estimates) +
   theme (axis.text.y=element_text(size=12))
 dev.off()
 
-
 ``` 
 
-<img src="" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2.png" align="center" width = "800px"/>
 
 Figura 5.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
 
