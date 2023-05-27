@@ -179,14 +179,138 @@ dev.off()
 
 ```
 
-<img src="" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
 
 Figura 4.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
 
+``` r
+
+###############
+# Exercício 2 #
+###############
+
+# Fazer uma curva de rarefação utilizando a riqueza de espécies 
+# e o número de indivíduos contados
+
+# Abrir pacote para remodelar a tabela de dados
+library(reshape2)
+y2 <- dcast(y, Especie ~ Parcela, value.var="N_individuos")
+y2
+
+# Substituir os NA's por zeros
+y2 <- y2 %>% replace(is.na(.), 0) 
+str(y2)
+
+# Transformar o data.frame y2 em "integer"
+y3 <- as.matrix(apply(y2[,-1],2,as.integer))
+str(y3)
+
+# Informar que os nomes da espécies 
+row.names(y3) <- y2[,1]
+
+# Contar o número de indivíduos por parcela
+colSums(y3)
+
+#Abrir pacote para fazer a interpolação e extrapolação dos dados
+# Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
+library(iNEXT)
+estimates <- iNEXT(y3, datatype="abundance", endpoint=100)
+
+# A comparação da riqueza de espécies entre as comunidades deve ser feita com base na riqueza 
+# de espécies rarefeita, que é calculada com base no número de indivíduos da parcela 
+# de amostragem com menor abundância (Da Silva et al. 2022 - Análises ecológicas no R)
+ggiNEXT(estimates) +
+  scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
+  scale_colour_manual(values = c("orange", "cyan")) +
+  labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank()) + 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank()) +
+  theme (axis.text.x=element_text(size=12)) +
+  theme (axis.text.y=element_text(size=12))
+
+# Inserir uma linha vertical tracedaja na Parcela_2 e salvar a figura final  
+png(file="Figura2_Rarefacao_Parcelas_1_e_2.png", width = 1000, height = 600)
+ggiNEXT(estimates) +
+  geom_vline(xintercept = 10, lty = 2) +
+  scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
+  scale_colour_manual(values = c("orange", "cyan")) +
+  labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank()) + 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank()) +
+  theme (axis.text.x=element_text(size=12)) +
+  theme (axis.text.y=element_text(size=12))
+dev.off()
 
 
+``` 
 
+<img src="" align="center" width = "800px"/>
 
+Figura 5.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+
+``` r
+
+###############
+# Exercício 3 #
+###############
+
+# Utilizar dados simulados para para testar se existe diferença significativa
+# entre a riqueza e a abundância de indivíduos na borda e no interior da floresta
+
+# Ler as planilhas das parcelas amostradas e das parcelas simuladas
+y4 <- read_excel("parcelas_1_e_2_juntas.xlsx", na = "-") # parcelas amostrada
+y5 <- read_excel("parcelas_simulacao3.xlsx", na = "-") # parcelas simuladas
+
+# Juntar as duas planilhas 
+y6 <- rbind(y4, y5)
+
+# Salvar um arquivo com as duas planilhas unidas
+write.xlsx(y6, 'parcelas_1_e_2_juntas_e_simuladas.xlsx')
+
+# Remodelar a tabela de dados
+y7 <- dcast(y6, Especie ~ Local, value.var="N_individuos")
+y7
+
+# Transformar o data.frame y2 em "integer"
+y8 <- as.matrix(apply(y7[,-1],2,as.integer))
+str(y8)
+
+# Informar que os nomes da espécies 
+row.names(y8) <- y7[,1]
+
+# Contar o número de indivíduos por parcela
+colSums(y8)
+
+# Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
+estimates2 <- iNEXT(y8, datatype="abundance", endpoint=100)
+
+# Salvar a figura 
+png(file="Figura3_Rarefacao_Simulada_Borda_e_Interior.png", width = 1000, height = 600)
+ggiNEXT(estimates2) + 
+geom_vline(xintercept = 10, lty = 2) +
+  scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) + 
+  scale_colour_manual(values = c("orange", "cyan")) +
+  labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank()) + 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank()) +
+  theme (axis.text.x=element_text(size=12)) +
+  theme (axis.text.y=element_text(size=12))
+dev.off()
+
+```
+
+<img src="" align="center" width = "800px"/>
+
+Figura 6.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
 
 -----
 
