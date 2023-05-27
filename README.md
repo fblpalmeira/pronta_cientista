@@ -38,11 +38,11 @@ Figura 2.  Localização das pareclas amostradas na área de estudo.
 
 - [Código `.R`]()
 
-- [Planilha `.csv`]()
+- [Planilha - Parcela_1 `.csv`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcela1_lado_esquerdo.xlsx)
 
-- [Planilha `.csv`]()
+- [Planilha - Parcela_2 `.csv`]()
 
-- [Planilha `.csv`]()
+- [Planilha - Simulação `.csv`]()
 
 - [Link1 `.R`](https://posit.cloud/content/5718175)
 
