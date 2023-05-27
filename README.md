@@ -1,6 +1,6 @@
 # Pronta pra ser Cientista 2023, 4a. edição
 
-## Aula 4, 27 de maio de 2023, Ciência de Dados
+## Aula 4, Ciência de Dados, 27 de maio de 2023 
 Francesca B. L. Palmeira, francesca@alumni.usp.br 
 
 O avanço tecnológico dos últimos anos facilitou o nosso acesso a equipamentos modernos de campo e a ferramentas gratuitas para a análise de dados de biodiversidade. Aliado a este fato, existe uma quantidade enorme de dados biológicos disponíveis em diferentes repositórios públicos e base de dados online. 
