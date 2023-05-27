@@ -24,11 +24,11 @@ Também é importante realçar que o trabalho com análise e visualização de d
 
 O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
 
-Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerda e a outra do lado direito, com uma distância entra elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
+Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerda e a outra do lado direito, com uma distância entre elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas.png" align="center" width = "800px"/>
 
-Figura 2.  Localização das pareclas amostradas na área de estudo.
+Figura 2.  Localização das parcelas amostradas na área de estudo.
 
 -----
 
@@ -89,18 +89,15 @@ y3 <- rbind(y1, y2)
 
 -----
 
-Roteiro para elaborar um Projeto de Pesquisa
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
 
-COMO FAZER UMA PESQUISA?
+Figura 2.  Localização das pareclas amostradas e das parcelas hipotéticamente simuladas.
 
-ROTEIRO PARA ELABORAR UM PROJETO DE PESQUISA:
-
-- Introdução/Justificativa: Fazer uma boa pergunta e contextualizar com embasamento teórico;
-- Métodos: Adotar um método robusto (desenho amostral ou delineamento amostral);
-- Resultados: Análise e visualização dos dados, interpretação e comunicação dos resultados;
-- Discussão/Conclusão: Achados, aplicações e novas perguntas que deverão ser respondidas;
+-----
 
 BIBLIOGRAFIA BÁSICA:
+
+- [Capítulo 10 - Rarefação: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap10.html)
 
 - [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap11.html)
 
