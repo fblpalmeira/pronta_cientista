@@ -1,7 +1,10 @@
 # Pronta pra ser Cientista 2023, 4a. edição
 
 ## Aula 4, Ciência de Dados, 27 de maio de 2023 
-Francesca B. L. Palmeira, francesca@alumni.usp.br 
+
+### Francesca B. L. Palmeira, francesca@alumni.usp.br 
+
+-----
 
 O avanço tecnológico dos últimos anos facilitou o nosso acesso a equipamentos modernos de campo e a ferramentas gratuitas para a análise de dados de biodiversidade. Aliado a este fato, existe uma quantidade enorme de dados biológicos disponíveis em diferentes repositórios públicos e base de dados online. 
 
@@ -15,15 +18,31 @@ Neste caso, a linguagem R foi feita especificamente para oferecer um conjunto in
 
 Também é importante realçar que o trabalho com análise e visualização de dados de biodiversidade pode subsidiar o planejamento de ações de conservação baseadas em evidências.
 
+-----
+
 MATERIAIS:
 
 - [Tutorial para abrir uma conta no RStudio Cloud `.pdf`]()
 
-- [Código `.R`]()
+- [Planilha `.csv`]()
 
 - [Planilha `.csv`]()
 
-https://posit.cloud/content/2370311
+- [Planilha `.csv`]()
+
+- [Código `.R`]()
+
+- [Link1 `.R`](https://posit.cloud/content/5718175)
+
+- [Link2 `.R`]()
+
+- [Link3 `.R`]()
+
+- [Link4 `.R`]()
+
+- [Link5 `.R`]()
+- 
+- https://posit.cloud/content/2370311
  
 EXERCÍCIO: O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
 
