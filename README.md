@@ -62,7 +62,7 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 - [Link2 `.R`](https://posit.cloud/content/6029576)
 
-- [Link3 `.R`]()
+- [Link3 `.R`](https://posit.cloud/content/6029582)
 
 - [Link4 `.R`]()
 
