@@ -19,18 +19,28 @@ Neste caso, a linguagem R foi feita especificamente para oferecer um conjunto in
 Também é importante realçar que o trabalho com análise e visualização de dados de biodiversidade pode subsidiar o planejamento de ações de conservação baseadas em evidências.
 
 -----
+ 
+EXERCÍCIO: O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
+
+Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerda e a outra do lado direito, com uma distância entra elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas.png" align="center" width = "800px"/>
+
+Figura 2.  Localização das pareclas amostradas na área de estudo.
+
+-----
 
 MATERIAIS:
 
 - [Tutorial para abrir uma conta no RStudio Cloud `.pdf`]()
 
-- [Planilha `.csv`]()
-
-- [Planilha `.csv`]()
-
-- [Planilha `.csv`]()
-
 - [Código `.R`]()
+
+- [Planilha `.csv`]()
+
+- [Planilha `.csv`]()
+
+- [Planilha `.csv`]()
 
 - [Link1 `.R`](https://posit.cloud/content/5718175)
 
@@ -41,17 +51,9 @@ MATERIAIS:
 - [Link4 `.R`]()
 
 - [Link5 `.R`]()
-- 
-- https://posit.cloud/content/2370311
- 
-EXERCÍCIO: O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
-
-Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerda e a outra do lado direito, com uma distância entra elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
-
-
-
 
 -----
+
 ## Prática
 
 Esta prática tem três etapas principais: 
@@ -61,6 +63,8 @@ Esta prática tem três etapas principais:
 - Análise de dados; e,
  
 - Visualização de resultados.  
+
+-----
 
 ## Preparando os dados
 
