@@ -42,7 +42,7 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 - [Tutorial para abrir uma conta no RStudio Cloud `.pdf`]()
 
-- [Código `.R`]()
+- [Código `.R`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/riqueza_pronta.R)
 
 - [Planilha - Parcela_1 `.csv`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcela1_lado_esquerdo.xlsx)
 
