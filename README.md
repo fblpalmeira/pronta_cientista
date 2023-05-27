@@ -252,7 +252,7 @@ dev.off()
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2.png" align="center" width = "800px"/>
 
-Figura 5.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+Figura 5.  Comparar as duas parcelas amostradas (Parcela_1 e Parcela_2).
 
 ``` r
 
@@ -287,7 +287,7 @@ row.names(y8) <- y7[,1]
 # Contar o número de indivíduos por parcela
 colSums(y8)
 
-# Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
+# Comparar as parcelas da Borda e do Interior
 estimates2 <- iNEXT(y8, datatype="abundance", endpoint=100)
 
 # Salvar a figura 
@@ -308,7 +308,7 @@ dev.off()
 
 ```
 
-<img src="" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura3_Rarefacao_Simulada_Borda_e_Interior.png" align="center" width = "800px"/>
 
 Figura 6.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
 
