@@ -6,7 +6,7 @@
 
 -----
 
-## Motivação:
+## Motivação
 
 O avanço tecnológico dos últimos anos facilitou o nosso acesso a equipamentos modernos de campo e a ferramentas gratuitas para a análise de dados de biodiversidade. Aliado a este fato, existe uma quantidade enorme de dados biológicos disponíveis em diferentes repositórios públicos e base de dados online.
 
@@ -24,7 +24,7 @@ A comunidade R é muito amigável e as pessoas que fazem parte dessas comunidade
 
 -----
  
-## Prática: 
+## Prática 
 
 O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
 
@@ -42,7 +42,7 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 -----
 
-## Materiais:
+## Materiais
 
 - [Tutorial para abrir uma conta no RStudio Cloud `.pdf`]()
 
@@ -54,7 +54,9 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 - [Planilha - Simulação `.csv`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcelas_simulacao3.xlsx)
 
-## Acesse qualquer um dos links abaixo para fazer os exercícios
+-----
+
+## Links dos exercícios
 
 - [Link1 `.R`](https://posit.cloud/content/5718175)
 
@@ -99,15 +101,14 @@ y3 <- rbind(y1, y2)
 
 -----
 
-
------
-
-BIBLIOGRAFIA BÁSICA:
+## Bibliografia básica
 
 - [Capítulo 10 - Rarefação: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap10.html)
 
 - [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap11.html)
+ 
+-----
 
-BIBLIOGRAFIA COMPLEMENTAR:
+## Bibliografia complementar
 
 - [Livro completo: Análises Ecológicas no R `.html`](https://analises-ecologicas.com/index.html)
