@@ -186,6 +186,10 @@ Figura 4.  Gráfico de barras mostrando a Distribuição de Abundância de Espé
 
 ``` r
 
+----
+
+## Construir uma curva de rarefação de espécies amostradas nas duas parcelas
+
 ###############
 # Exercício 2 #
 ###############
@@ -255,6 +259,9 @@ dev.off()
 Figura 5.  Comparar as duas parcelas amostradas (Parcela_1 e Parcela_2).
 
 ``` r
+-----
+
+## Construir uma curva de rarefação das espécies amostradas na borda e no interior
 
 ###############
 # Exercício 3 #
