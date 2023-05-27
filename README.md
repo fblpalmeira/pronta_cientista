@@ -28,7 +28,7 @@ Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parce
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas.png" align="center" width = "800px"/>
 
-Figura 2.  Localização das parcelas amostradas na área de estudo.
+Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão Preto.
 
 -----
 
