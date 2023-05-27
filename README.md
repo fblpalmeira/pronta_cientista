@@ -20,7 +20,9 @@ Também é importante realçar que o trabalho com análise e visualização de d
 
 -----
  
-EXERCÍCIO: O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
+## Prática: 
+
+O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP, município de Ribeirão Preto, SP.
 
 Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerda e a outra do lado direito, com uma distância entra elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
 
@@ -30,7 +32,7 @@ Figura 2.  Localização das pareclas amostradas na área de estudo.
 
 -----
 
-MATERIAIS:
+## Materiais:
 
 - [Tutorial para abrir uma conta no RStudio Cloud `.pdf`]()
 
@@ -54,21 +56,9 @@ MATERIAIS:
 
 -----
 
-## Prática
-
-Esta prática tem três etapas principais: 
-
-- Preparando os dados (Carregar, manipular e limpar o arquivo de dados);
-
-- Análise de dados; e,
- 
-- Visualização de resultados.  
-
------
-
 ## Preparando os dados
 
-Carregar, manipular e limpar o arquivo de dados no `R`:
+Carregar e manipular os dados no `R`:
 
 ``` r
 #######################
