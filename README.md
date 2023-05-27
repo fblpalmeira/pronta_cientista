@@ -30,6 +30,12 @@ Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parce
 
 Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão Preto.
 
+No laboratório, iremos simular os dados de amostragem de mais 10 parcelas dentro da Floresta, totalizando no seis parcelas interior e seis na borda na borda, incluindo as duas parcelas que amostramos no campo. O objetivo da simulação é aumentar o esforço amostral para conseguirmos fazer os exercícios e interpretar os resultados.
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
+
+Figura 3.  Localização das pareclas amostradas e das parcelas hipotéticamente simuladas.
+
 -----
 
 ## Materiais:
@@ -42,7 +48,7 @@ Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão
 
 - [Planilha - Parcela_2 `.csv`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcela2_lado_direito.xlsx)
 
-- [Planilha - Simulação `.csv`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcelas_simulacao.xlsx)
+- [Planilha - Simulação `.csv`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcelas_simulacao3.xlsx)
 
 ## Acesse qualquer um dos links abaixo para fazer os exercícios
 
@@ -89,9 +95,6 @@ y3 <- rbind(y1, y2)
 
 -----
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
-
-Figura 2.  Localização das pareclas amostradas e das parcelas hipotéticamente simuladas.
 
 -----
 
