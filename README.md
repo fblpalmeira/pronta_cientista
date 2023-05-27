@@ -186,7 +186,7 @@ Figura 4.  Gráfico de barras mostrando a Distribuição de Abundância de Espé
 
 -----
 
-## Construir uma curva de rarefação de espécies amostradas nas duas parcelas
+## Construir uma curva de rarefação das espécies amostradas nas duas parcelas
 
 ``` r
 
