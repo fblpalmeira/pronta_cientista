@@ -42,9 +42,7 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 -----
 
-## Materiais
-
-- [Tutorial para abrir uma conta no RStudio Cloud `.pdf`]()
+## Código e Planilhas de dados
 
 - [Código `.R`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/riqueza_pronta.R)
 
@@ -56,7 +54,9 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 -----
 
-## Links dos exercícios
+## Links dos exercícios no Posit Cloud
+
+- [Tutorial para abrir uma conta no Posit Cloud `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
 
 - [Link1 `.R`](https://posit.cloud/content/5718175)
 
