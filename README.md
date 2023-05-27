@@ -7,7 +7,7 @@ O avanço tecnológico dos últimos anos facilitou o nosso acesso a equipamentos
 
 O grande desafio para a pessoa aspirante a analista de dados da biodiversidade é conhecer toda esta vastidão de opções de análises e modelos ecológicos disponíveis. Cada modelo tem premissas que devem ser atendidas e um delineamento amostral específico para a coleta de dados. Além dos conhecimentos teóricos de Biologia e Ecologia, o aspirante a analista de dados de biodiversidade precisa ter noções avançadas de Estatística e de Programação (ex. R, Python, entre outras linguagens) (Figura 1).
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/fig1_pronta.png" align="center" width = "500px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/fig1_pronta.png" align="center" width = "550px"/>
 
 Figura 1.  Áreas do conhecimento necessárias para analisar dados de biodiversidade.
 
