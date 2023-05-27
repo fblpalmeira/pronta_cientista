@@ -111,4 +111,4 @@ y3 <- rbind(y1, y2)
 
 ## Bibliografia complementar
 
-- [Livro completo: Análises Ecológicas no R `.html`](https://analises-ecologicas.com/index.html)
+- [Livro completo - Análises Ecológicas no R `.html`](https://analises-ecologicas.com/index.html)
