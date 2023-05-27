@@ -73,25 +73,116 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 Carregar e manipular os dados no `R`:
 
 ``` r
-#######################
-# Preparando os dados #
-#######################
-
 Sys.setlocale("LC_ALL","pt_BR.UTF-8")
 
-library (readxl) # Abrir o pacote que lê arquivos do Excel (extensões .xls ou .xlsx)
-library(dplyr) # Abrir o pacote para manipular os dados 
+###############
+# Exercício 1 #
+###############
 
-y1 <- read_excel("parcela_lado_esquerdo.xlsx", na = "-") # Criar um objeto (ex.: y1) que armazena a planilha do Excel
-y1 <- y1 %>% mutate (Lado = "Esquerdo", .after=ID) # Criar uma nova coluna chamada "Lado" e posicioná-la depois da coluna ID
-y1 <- y1 %>% mutate (Parcela = "P1", .after=ID) # Criar uma nova coluna chamada "Parcela" e posicioná-la depois da coluna ID 
+# Construir um gráfico de Distribuição de Abundância de Espécies 
+# das parcelas amostradas em campo (Parcela_1 e Parcela_2) 
 
-y2 <- read_excel("parcela_lado_direito.xlsx", na = "-")
-y2 <- y2 %>% mutate (Lado = "Direito", .after=ID)
-y2 <- y2 %>% mutate (Parcela = "P2", .after=ID)
+# Abrir o pacote que lê arquivos do Excel (extensões .xls ou .xlsx)
+library(readxl) 
 
-y3 <- rbind(y1, y2)
+# Criar um objeto (ex.: y1) para armazenar a planilha do Excel
+p1 <- read_excel("parcela1_lado_esquerdo.xlsx", na = "-")
+p2 <- read_excel("parcela2_lado_direito.xlsx", na = "-")
+
+# Juntar as duas planilhas 
+y <- rbind(p1, p2)
+
+# Abrir o pacote que cria arquivos do Excel (extensões .xls ou .xlsx)
+# Salvar um arquivo com as duas planilhas unidas
+library(openxlsx)
+write.xlsx(y, 'parcelas_1_e_2_juntas.xlsx')
+
+# Estudando os dados
+head(y)     # Visualização da planilha parcial
+View(y)     # Visualização da planilha inteira
+class(y)    # Saber qual é a classe dos dados
+str(y)      # Exibe a estrutura interna de um objeto 
+summary(y)  # Exibe o resumo para cada variável (amplitudes mínima e máxima, média e mediana)
+
+# Abrir o pacote para manipular os dados 
+library(dplyr) 
+y1 <- y %>% select(Especie, N_individuos) %>% 
+            count(Especie, N_individuos, sort=T)
+
+# Abrir o pacote para manipular dados categóricos
+# Agrupar as espécies pelo nome (sp1, sp2, etc) e contar o número de indivíduos
+library(forcats)
+y1 <- y1 %>% group_by(Especie) %>%
+             summarize(N_individuos = sum(N_individuos))
+
+# Abrir pacote para construir gráficos
+# Construir um gráfico de barras para visualizar o número de indivíduos por espécie
+library(ggplot2)
+ggplot(y1, aes(Especie, N_individuos)) + 
+  geom_col()
+
+# Ordenar o número de indivíduos por espécie  
+ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
+  geom_col()
+
+# Ordenar o número de indivíduos por espécie em ordem decrescente para
+# visualizarmos a Distribuição de Abundância das Espécies (DAE), desta forma,
+# poderemos identificar facilmente quais são as espécies mais abundantes 
+# e quais são as mais raras
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col()
+
+# Colorir as barras do gráfico e renomear as etiquetas (x,y) do gráfico
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "#009E73") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")
+
+# Limpar o fundo do gráfico e as linhas (x, y) dos painéis 
+# utilizando a função 'theme'
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "#009E73") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw() + 
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+ 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank())
+
+# Aumentar o tamanho da letra dos eixos x e y
+# editando o argumento (axis.text.x=element_text(size=12)) da função 'theme' 
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "#009E73") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank()) + 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank()) +
+  theme (axis.text.x=element_text(size=12)) +
+  theme (axis.text.y=element_text(size=12))
+
+# Salvar a figura final em formato .png
+# Para salvar o gráfico é necessário utilizar a função 'png' antes da função 'ggplot' 
+# e a dev.off() na última linha
+png(file="Figura1_DAE.png", width = 1000, height = 600) 
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "#009E73") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank()) + 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank()) +
+  theme (axis.text.x=element_text(size=12)) +
+  theme (axis.text.y=element_text(size=12))
+dev.off() 
+
 ```
+
+<img src="" align="center" width = "800px"/>
+
+Figura 4.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+
 
 
 
