@@ -98,7 +98,7 @@ y <- rbind(p1, p2)
 library(openxlsx)
 write.xlsx(y, 'parcelas_1_e_2_juntas.xlsx')
 
-# Estudando os dados
+# Explorando os dados
 head(y)     # Visualização da planilha parcial
 View(y)     # Visualização da planilha inteira
 class(y)    # Saber qual é a classe dos dados
