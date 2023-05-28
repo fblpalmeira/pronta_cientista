@@ -208,7 +208,7 @@ Figura 1.  Gráfico de barras mostrando a Distribuição de Abundância de Espé
 
 ``` r
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1a_DAE.png"/>
 
 ```
 
@@ -223,20 +223,61 @@ ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
   
 ```
 
+Figura 2.  Gráfico de barras em ordem crescente.
+
 ``` r
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
-
-Figura 2.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1b_DAE.png"/>
 
 ```
 
+Figura 3.  Gráfico de barras em ordem decresente.
+
 ``` r
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1c_DAE.png"/>
 
-Figura 3.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+```
 
+Figura 4.  Gráfico de barras em ordem decresente.
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1d_DAE.png"/>
+
+```
+
+Figura 5.  Gráfico de barras em ordem decresente.
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1e_DAE.png"/>
+
+```
+
+Figura 6.  Gráfico de barras em ordem decresente.
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1f_DAE.png"/>
+
+```
+
+Figura 7.  Gráfico de barras em ordem decresente.
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
+
+```
+
+Figura 8.  Gráfico de barras em ordem decresente.
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1h_DAE.png"/>
+
+```
 -----
 
 ## Construir uma curva de rarefação das espécies amostradas nas duas parcelas
