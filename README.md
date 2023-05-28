@@ -74,8 +74,6 @@ Carregar e manipular os dados no `R`:
 
 ``` r
 
-Sys.setlocale("LC_ALL","pt_BR.UTF-8")
-
 ###############
 # Exercício 1 #
 ###############
@@ -83,100 +81,44 @@ Sys.setlocale("LC_ALL","pt_BR.UTF-8")
 # Construir um gráfico de Distribuição de Abundância de Espécies 
 # das parcelas amostradas em campo (Parcela_1 e Parcela_2) 
 
-# Abrir o pacote que lê arquivos do Excel (extensões .xls ou .xlsx)
-library(readxl) 
+# Instalar e abrir o pacote "readxl" que lê arquivos do Excel (extensões .xls ou .xlsx)
+# Para ler outras extensões de arquivos (ex.: .txt, .csv, .pdf, .html) utilizamos 
+# outros pacotes
+install.packages("readxl") # Instalar 
+library(readxl) # Abrir 
 
-# Criar um objeto (ex.: y1) para armazenar a planilha do Excel
-p1 <- read_excel("parcela1_lado_esquerdo.xlsx", na = "-")
-p2 <- read_excel("parcela2_lado_direito.xlsx", na = "-")
+# Criar um objeto para ler as planilhas de campo utilizando a função "read_excel"
+# O nome do objeto (ex.: p1, p2, y) é editável e você pode mudar se necessário
+# É importante que o nome do objeto seja curto e não tenha acento
+p1 <- read_excel("parcela1_lado_esquerdo.xlsx", na = "-") # Planilha da parcela 1
+p2 <- read_excel("parcela2_lado_direito.xlsx", na = "-") # Planilha da parcela 2
 
-# Juntar as duas planilhas 
-y <- rbind(p1, p2)
+# Juntar as duas planilhas (p1 e p2) em um único objeto (y) utilizando a função "rbind"
+y <- rbind (p1, p2)
+y # Vizualizar a planilha parcialmente
+View(y) # Vizualizar a planilha inteira
 
-# Abrir o pacote que cria arquivos do Excel (extensões .xls ou .xlsx)
-# Salvar um arquivo com as duas planilhas unidas
-library(openxlsx)
-write.xlsx(y, 'parcelas_1_e_2_juntas.xlsx')
+```
+Após unir os dois objetos, poderemos verificar a planilha parcial no Console do R. Se quiser em um só você poderá v, aparecerá está 
 
-# Explorando os dados
-head(y)     # Visualização da planilha parcial
-View(y)     # Visualização da planilha inteira
-class(y)    # Saber qual é a classe dos dados
-str(y)      # Exibe a estrutura interna de um objeto 
-summary(y)  # Exibe o resumo para cada variável (amplitudes mínima e máxima, média e mediana)
 
-# Abrir o pacote para manipular os dados 
-library(dplyr) 
-y1 <- y %>% select(Especie, N_individuos) %>% 
-            count(Especie, N_individuos, sort=T)
-
-# Abrir o pacote para manipular dados categóricos
-# Agrupar as espécies pelo nome (sp1, sp2, etc) e contar o número de indivíduos
-library(forcats)
-y1 <- y1 %>% group_by(Especie) %>%
-             summarize(N_individuos = sum(N_individuos))
-
-# Abrir pacote para construir gráficos
-# Construir um gráfico de barras para visualizar o número de indivíduos por espécie
-library(ggplot2)
-ggplot(y1, aes(Especie, N_individuos)) + 
-  geom_col()
-
-# Ordenar o número de indivíduos por espécie  
-ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
-  geom_col()
-
-# Ordenar o número de indivíduos por espécie em ordem decrescente para
-# visualizarmos a Distribuição de Abundância das Espécies (DAE), desta forma,
-# poderemos identificar facilmente quais são as espécies mais abundantes 
-# e quais são as mais raras
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col()
-
-# Colorir as barras do gráfico e renomear as etiquetas (x,y) do gráfico
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col(fill = "#009E73") +
-  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")
-
-# Limpar o fundo do gráfico e as linhas (x, y) dos painéis 
-# utilizando a função 'theme'
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col(fill = "#009E73") +
-  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw() + 
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank())+ 
-  theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank())
-
-# Aumentar o tamanho da letra dos eixos x e y
-# editando o argumento (axis.text.x=element_text(size=12)) da função 'theme' 
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col(fill = "#009E73") +
-  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank()) + 
-  theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank()) +
-  theme (axis.text.x=element_text(size=12)) +
-  theme (axis.text.y=element_text(size=12))
-
-# Salvar a figura final em formato .png
-# Para salvar o gráfico é necessário utilizar a função 'png' antes da função 'ggplot' 
-# e a dev.off() na última linha
-png(file="Figura1_DAE.png", width = 1000, height = 600) 
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col(fill = "#009E73") +
-  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank()) + 
-  theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank()) +
-  theme (axis.text.x=element_text(size=12)) +
-  theme (axis.text.y=element_text(size=12))
-dev.off() 
+``` r
+# A tibble: 23 × 12
+      ID Especie Familia   Classifica…¹ N_ind…² Carac…³ Estado Local Latit…⁴ Longi…⁵ Parcela Obser…⁶
+   <dbl> <chr>   <chr>     <chr>          <dbl> <chr>   <chr>  <chr>   <dbl>   <dbl> <chr>   <chr>  
+ 1     1 sp1     Piperacea Herbácea           8 Folha … Com f… Inte…   -21.2   -47.9 Parcel… O dese…
+ 2     2 sp2     NA        Arvoreta           8 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 3     3 sp3     NA        Árvore             4 Árvore… Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 4     4 sp4     NA        Árvore             2 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 5     5 sp5     NA        Trepadeira         2 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 6     6 sp6     NA        Herbácea           5 Sai do… Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 7     7 sp7     Croton    Árvore             5 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 8     8 sp8     NA        Árvore             4 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+ 9     9 sp9     NA        Herbácea          24 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+10    10 sp10    NA        Rastejante         1 Folha … Veget… Inte…   -21.2   -47.9 Parcel… O dese…
+# … with 13 more rows, and abbreviated variable names ¹​Classificacao, ²​N_individuos,
+#   ³​Caracteristica, ⁴​Latitude, ⁵​Longitude, ⁶​Observacao
+# ℹ Use `print(n = ...)` to see more rows
 
 ```
 
