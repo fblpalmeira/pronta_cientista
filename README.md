@@ -99,10 +99,11 @@ y # Vizualizar a planilha parcialmente
 View(y) # Vizualizar a planilha inteira
 
 ```
-Após unir os dois objetos, poderemos verificar a planilha parcial no Console do R. Se quiser em um só você poderá v, aparecerá está 
 
+## A união das duas planilhas (p1 e p2) resultará na tabela de dados (y) a seguir:
 
 ``` r
+
 # A tibble: 23 × 12
       ID Especie Familia   Classifica…¹ N_ind…² Carac…³ Estado Local Latit…⁴ Longi…⁵ Parcela Obser…⁶
    <dbl> <chr>   <chr>     <chr>          <dbl> <chr>   <chr>  <chr>   <dbl>   <dbl> <chr>   <chr>  
