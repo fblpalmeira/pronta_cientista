@@ -328,7 +328,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 
 ```
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1h_DAE.png"/>
 
 ## Salvando a figura final em um arquivo .png
 
@@ -337,7 +337,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 # Salvar a figura final em formato .png
 # Para salvar o gráfico é necessário utilizar a função 'png' antes da função 'ggplot' 
 # e a dev.off() na última linha
-png(file="Figura1i_DAE.png", width = 1000, height = 600) # Salvar a figura
+png(file="Figura1_DAE.png", width = 1000, height = 600) # Salvar a figura
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen")+
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
