@@ -506,6 +506,8 @@ Figura 6.  Gráfico de barras mostrando a Distribuição de Abundância de Espé
 
 ## Bibliografia básica
 
+- [Voltando ao básico: como dominar a arte de fazer perguntas cientificamente relevantes](https://analises-ecologicas.netlify.app/cap2.html)
+
 - [Capítulo 10 - Rarefação: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap10.html)
 
 - [Capítulo 11 - Estimadores de riqueza: Análises Ecológicas no R `.html`](https://analises-ecologicas.netlify.app/cap11.html)
