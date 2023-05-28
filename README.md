@@ -123,9 +123,119 @@ View(y) # Vizualizar a planilha inteira
 
 ```
 
+Agora que já temos uma única planilha com os dados coletados, iremos salvá-la em um arquivo que, posteiormente, poderá ser lido no Excel.
+É importante salvar todas as planilhas de entrada de dados e todas as figuras geradas durante as análises. 
+
+``` r
+
+# Abrir o pacote "openxlsx" que salva arquivos na extensão do Excel (extensões .xls ou .xlsx)
+install.packages("openxlsx") # Instalar o pacote
+library(openxlsx) # Abrir o pacote
+
+# Salvar um arquivo com as duas planilhas unidas
+# Entre "aspas" está o nome do arquivo que será salvo, você pode editar se precisar
+# Lembrando que o nome do arquivo não pode ter vírgula e deve ser curto 
+write.xlsx(y, "parcelas_1_e_2_juntas.xlsx") # Salvar o arquivo utilizando a função "write.xlsx" 
+
+```
+
+## Vamos começar a explorar os dados coletados? 
+
+Utilizando as funções abaixo podemos explorar os dados, visualizar a planilha, conhecer a estrutura interna de cada variável, ver as médias e medianas de cada varíavel numérica, os valores máximo e mínimo, entre outras informações.
+
+``` r
+
+# Explorando os dados 
+# Os comandos a seguir servem para conhecermos a estrutura dos dados e verificar 
+# quais deles são numéricos e quais são categóricos
+head(y)    # Visualização da planilha parcial
+View(y)    # Visualização da planilha inteira
+str(y)     # Exibe a estrutura interna de cada variável dentro do objeto 
+summary(y) # Exibe o resumo de cada variável mostrando as amplitudes mínima e máxima, a média e a mediana
+
+```
+
+Agora nós vamos precisar manipular alguns dados da planilha para fazer o gráfico. Primeiro, iremos filtar a coluna "Especies" e "N_individuos" e depois iremos contar quantos indivíduos por espécie registramos nas duas parcelas amostradas.
+
+``` r
+
+# Abrir os pacotes "dplyr" e "forcats" para manipular a planilha
+install.packages("dplyr") # Instalar 
+install.packages("forcats") 
+library(dplyr) # Abrir 
+library(forcats) 
+
+# Agrupar as Espécies (sp1, sp2, etc.) e contar o Número de indivíduos
+y1 <- y %>% group_by(Especie) %>% # Agrupar
+            summarize(N_individuos = sum(N_individuos)) # Contar
+y1
+
+``` 
+
+## Após a filtragem dos dados teremos a seguinte tabela de dados (y1):
+
+``` r
+
+# A tibble: 12 × 2
+   Especie N_individuos
+   <chr>          <dbl>
+ 1 sp1               16
+ 2 sp10               2
+ 3 sp11               6
+ 4 sp12               4
+ 5 sp2                9
+ 6 sp3                7
+ 7 sp4                9
+ 8 sp5                3
+ 9 sp6                6
+10 sp7                7
+11 sp8               16
+12 sp9               26
+
+```
+
+Após contar o número de espécies por indivíduos, iremos vizualizar esses dados em um simples gráfico de barras. Aproveite para verificar quais espécies foram mais abundante e quais foram raras. 
+
+``` r
+
+# Construir um gráfico de barras para visualizar o número de indivíduos por espécie registrada
+ggplot(y1, aes(Especie, N_individuos)) + 
+  geom_col()
+
+```
+
+Figura 1.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+
+``` r
+
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
 
-Figura 4.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+```
+
+Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar uma função para ordenar as espécies de acordo com o número de indivíduos registrados.
+
+``` r
+
+# Ordenar o número de indivíduos por espécie em ordem crescente 
+# utilizando a função "reorder"  
+ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) + 
+  geom_col()
+  
+```
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
+
+Figura 2.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+
+```
+
+``` r
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_DAE.png" align="center" width = "800px"/>
+
+Figura 3.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
 
 -----
 
