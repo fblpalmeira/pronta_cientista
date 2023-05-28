@@ -204,15 +204,11 @@ ggplot(y1, aes(Especie, N_individuos)) +
 
 ```
 
-Figura 1.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
-
-``` r
+## Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1a_DAE.png"/>
 
-```
-
-Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar uma função para ordenar as espécies de acordo com o número de indivíduos registrados.
+Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar a função "reorder" para ordenar as espécies de acordo com o número de indivíduos registrados.
 
 ``` r
 
@@ -223,51 +219,101 @@ ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
   
 ```
 
-Figura 2.  Gráfico de barras em ordem crescente.
-
-``` r
+## Gráfico organizado em ordem crescente.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1b_DAE.png"/>
 
+``` r
+
+# Ordenar o número de indivíduos por espécie em ordem decrescente para
+# visualizarmos a Distribuição de Abundância das Espécies (DAE), desta forma,
+# poderemos identificar facilmente quais são as espécies mais abundantes e quais são as mais raras
+# Para ordenar em ordem descrescente basca colocar um sinal de menos (-) na variável
+# "-N_individuos" depois da função "reorder"
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col()
+
 ```
 
-Figura 3.  Gráfico de barras em ordem decresente.
-
-``` r
+## Gráfico organizado em ordem decresente.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1c_DAE.png"/>
 
+``` r
+
+# Colorir as barras do gráfico editando o argumento "fill" dentro da função "geom_col" 
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "darkgreen") # Editar a cor do gráfico
+
 ```
 
-Figura 4.  Gráfico de barras em ordem decresente.
-
-``` r
+## Colorindo o gráfico
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1d_DAE.png"/>
 
+``` r
+
+# Renomear as legenda dos eixos (x, y) do gráfico utilizando a função "labs"
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "darkgreen") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)") # Editar a legenda
+
 ```
 
-Figura 5.  Gráfico de barras em ordem decresente.
-
-``` r
+## Editando as legendas do gráfico
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1e_DAE.png"/>
 
-```
-
-Figura 6.  Gráfico de barras em ordem decresente.
 
 ``` r
+
+# Limpar o fundo do gráfico e as linhas (x, y) do painél 
+# utilizando a função 'theme'
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "darkgreen") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw() + # Limpar o fundo do gráfico
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+ 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank())
+         
+```
+
+## Limpando o fundo do gráfico
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1f_DAE.png"/>
 
+``` r
+
+# Aumentar o tamanho da letra da legenda nos eixos x e y editando o 
+# argumento (axis.text.x=element_text(size=12)) da função 'theme' 
+# Caso necessário utilize uma letra maior (size=13,14,15,etc.) ou menor (11,10,9,8)
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+  geom_col(fill = "darkgreen") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank()) + 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank()) +
+  theme (axis.text.x=element_text(size=12)) + # Aumentar a letra do eixo x
+  theme (axis.text.y=element_text(size=12)) # Aumentar a letra do eixo y
+
 ```
 
-Figura 7.  Gráfico de barras em ordem decresente.
+## Aumentando o tamanho da letra das legendas
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
 
 ``` r
 
+## Aumentando o tamanho do número dos eixos x e y
+
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
+
+```
+``` r
 
 ```
 
