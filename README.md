@@ -204,7 +204,7 @@ ggplot(y1, aes(Especie, N_individuos)) +
 
 ```
 
-## Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+## Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1a_DAE.png"/>
 
@@ -219,7 +219,7 @@ ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
   
 ```
 
-## Gráfico organizado em ordem crescente.
+## Organizando o gráfico em ordem crescente
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1b_DAE.png"/>
 
@@ -235,7 +235,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ```
 
-## Gráfico organizado em ordem decresente.
+## Organizando o gráfico em ordem decrescente
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1c_DAE.png"/>
 
@@ -267,7 +267,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ``` r
 
-# Limpar o fundo do gráfico e as linhas (x, y) do painél 
+# Limpar o fundo do gráfico e as linhas (x, y) do painel 
 # utilizando a função 'theme'
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
   geom_col(fill = "darkgreen") +
@@ -302,17 +302,18 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ```
 
-## Aumentando o tamanho da letra das legendas
+## Aumentando o tamanho das letras dos títulos dos eixos x e y
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
 
 ``` r
 
-## Aumentando o tamanho do número dos eixos x e y
+## Aumentando o tamanho dos números nos eixos x e y
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
 
 ```
+
 ``` r
 
 ```
