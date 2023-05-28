@@ -201,7 +201,7 @@ Após contar o número de espécies por indivíduos, iremos vizualizar esses dad
 ``` r
 
 # Construir um gráfico de barras para visualizar o número de indivíduos por espécie registrada
-ggplot(y1, aes(Especie, N_individuos)) + 
+ggplot(y1, aes(Especie, N_individuos))+ 
   geom_col()
 
 ```
@@ -216,7 +216,7 @@ Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar a
 
 # Ordenar o número de indivíduos por espécie em ordem crescente 
 # utilizando a função "reorder"  
-ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) + 
+ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos))+ 
   geom_col()
   
 ```
@@ -232,7 +232,7 @@ ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
 # poderemos identificar facilmente quais são as espécies mais abundantes e quais são as mais raras
 # Para ordenar em ordem descrescente basca colocar um sinal de menos (-) na variável
 # "-N_individuos" depois da função "reorder"
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col()
 
 ```
@@ -244,33 +244,34 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 ``` r
 
 # Colorir as barras do gráfico editando o argumento "fill" dentro da função "geom_col" 
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen") # Editar a cor do gráfico
 
 ```
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1d_DAE.png"/>
 
-## Editando o tamanho das letras 
+## Renomeando o nome das etiquetas dos eixos x e y 
 
 ``` r
 
-# Renomear as legenda dos eixos (x, y) do gráfico utilizando a função "labs"
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col(fill = "darkgreen") +
-  labs(x = "Nome das espécies", y = "Número de indivíduos (n)") # Editar a legenda
+# Renomear as etiquetas dos eixos (x, y) do gráfico utilizando a função "labs"
+# Colocar acentos e descrever sucintamente para que o leitor possa saber o que significa cada eixo
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
+  geom_col(fill = "darkgreen")+
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)") # Editar a etiqueta
 
 ```
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1e_DAE.png"/>
 
-## Editando o tamanho dos números 
+## Limpando o fundo do gráfico
 
 ``` r
 
 # Limpar o fundo do gráfico e as linhas (x, y) do painel 
 # utilizando a função 'theme'
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen") +
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
   theme_bw() + # Limpar o fundo do gráfico
@@ -283,49 +284,76 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1f_DAE.png"/>
 
-## Limpando o fundo do gráfico
+## Aumentando o tamanho das letras 
 
 ``` r
 
-# Aumentar o tamanho da letra da legenda nos eixos x e y editando o 
-# argumento (axis.text.x=element_text(size=12)) da função 'theme' 
-# Caso necessário utilize uma letra maior (size=13,14,15,etc.) ou menor (11,10,9,8)
-ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
-  geom_col(fill = "darkgreen") +
+# Aumentar o tamanho da letra dos títulos de cada eixo (x e y) editando o 
+# argumento (axis.title.x=element_text(size=20) e (axis.title.y=element_text(size=20)) da função 'theme' 
+# Caso necessário utilize uma letra maior ou menor que 20
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
+  geom_col(fill = "darkgreen")+
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
   theme_bw() +
   theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank()) + 
+         panel.grid.minor.y = element_blank())+ 
   theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank()) +
-  theme (axis.text.x=element_text(size=12)) + # Aumentar a letra do eixo x
-  theme (axis.text.y=element_text(size=12)) # Aumentar a letra do eixo y
+         panel.grid.minor.x = element_blank())+
+  theme (axis.title.x=element_text(size=20))+ # Aumentar o tamanho do título no eixo x
+  theme (axis.title.y=element_text(size=20)) # Aumentar o tamanho do título no eixo y
 
 ```
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
 
-## Aumentando o tamanho das letras dos títulos dos eixos x e y
+## Aumentando o tamanho dos números 
 
 ``` r
 
-## Aumentando o tamanho dos números nos eixos x e y
+# Aumentar o tamanho dos números nos eixos x e y editando o 
+# argumento (axis.text.x=element_text(size=14) e (axis.text.y=element_text(size=14) da função 'theme' 
+# Caso necessário utilize uma letra maior ou menor que 14
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
+  geom_col(fill = "darkgreen")+
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw() +
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+ 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank())+
+  theme (axis.title.x=element_text(size=20))+ 
+  theme (axis.title.y=element_text(size=20))+
+  theme (axis.text.x=element_text(size=16))+ # Aumentar a letra do eixo x
+  theme (axis.text.y=element_text(size=16)) # Aumentar a letra do eixo y
+
+```
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
 
-```
-
-``` r
+## Salvando a figura final em um arquivo .png
 
 ```
 
-Figura 8.  Gráfico de barras em ordem decresente.
+# Salvar a figura final em formato .png
+# Para salvar o gráfico é necessário utilizar a função 'png' antes da função 'ggplot' 
+# e a dev.off() na última linha
+png(file="Figura1i_DAE.png", width = 1000, height = 600) # Salvar a figura
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
+  geom_col(fill = "darkgreen")+
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw()+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+ 
+  theme (panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank())+
+  theme (axis.title.x=element_text(size=20))+ 
+  theme (axis.title.y=element_text(size=20))+
+  theme (axis.text.x=element_text(size=16))+ 
+  theme (axis.text.y=element_text(size=16))
+dev.off() # Salvar a figura
 
-``` r
+``` 
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1h_DAE.png"/>
-
-```
 -----
 
 ## Construir uma curva de rarefação das espécies amostradas nas duas parcelas
