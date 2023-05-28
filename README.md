@@ -249,7 +249,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1d_DAE.png"/>
 
-## Renomeando o nome das etiquetas dos eixos x e y 
+## Renomeando as etiquetas dos eixos x e y 
 
 ``` r
 
