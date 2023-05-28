@@ -269,66 +269,78 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 
 ``` r
 
-# Limpar o fundo do gráfico e as linhas (x, y) do painel 
-# utilizando a função 'theme'
+# Limpar o fundo do gráfico utilizando a função 'theme_bw'
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen") +
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw() + # Limpar o fundo do gráfico
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank())+ 
-  theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank())
+  theme_bw() # Limpar o fundo do gráfico
          
 ```
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1f_DAE.png"/>
 
+## Limpando a grade do gráfico
+
+``` r
+
+# Limpar a grade do gráfico utilizando o "element_blank()" dentro da função 'theme'
+ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
+  geom_col(fill = "darkgreen") +
+  labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
+  theme_bw()+
+  theme (panel.grid.major.x = element_blank(), # Limpar linhas do eixo x
+         panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), # Limpar linhas do eixo y
+         panel.grid.minor.y = element_blank())
+
+``` 
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
+
 ## Aumentando o tamanho das letras 
 
 ``` r
 
-# Aumentar o tamanho da letra dos títulos de cada eixo (x e y) editando o 
-# argumento (axis.title.x=element_text(size=20) e (axis.title.y=element_text(size=20)) da função 'theme' 
-# Caso necessário utilize uma letra maior ou menor que 20
+# Aumentar o tamanho da letra da etiqueta em cada eixo (x e y) editando os 
+# argumentos (axis.title.x=element_text(size=20) e (axis.title.y=element_text(size=20)) 
+# da função 'theme'. Caso necessário utilize uma letra maior ou menor que 20
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen")+
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank())+ 
+  theme_bw()+
   theme (panel.grid.major.x = element_blank(), 
          panel.grid.minor.x = element_blank())+
-  theme (axis.title.x=element_text(size=20))+ # Aumentar o tamanho do título no eixo x
-  theme (axis.title.y=element_text(size=20)) # Aumentar o tamanho do título no eixo y
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
+  theme (axis.title.x=element_text(size=20))+ # Aumentar as letras no eixo x
+  theme (axis.title.y=element_text(size=20)) # Aumentar as letras no eixo y
 
 ```
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1h_DAE.png"/>
 
 ## Aumentando o tamanho dos números 
 
 ``` r
 
-# Aumentar o tamanho dos números nos eixos x e y editando o 
-# argumento (axis.text.x=element_text(size=14) e (axis.text.y=element_text(size=14) da função 'theme' 
-# Caso necessário utilize uma letra maior ou menor que 14
+# Aumentar o tamanho dos números nos eixos x e y editando os 
+# argumentos (axis.text.x=element_text(size=16) e (axis.text.y=element_text(size=16) da função 'theme' 
+# Caso necessário utilize um tamanho maior ou menor que 16
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen")+
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank())+ 
-  theme (panel.grid.major.x = element_blank(), 
+  theme_bw()+
+  theme (panel.grid.major.x = element_blank(),
          panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
   theme (axis.title.x=element_text(size=20))+ 
   theme (axis.title.y=element_text(size=20))+
-  theme (axis.text.x=element_text(size=16))+ # Aumentar a letra do eixo x
-  theme (axis.text.y=element_text(size=16)) # Aumentar a letra do eixo y
+  theme (axis.text.x=element_text(size=16))+ # Aumentar o tamanho dos números no eixo x
+  theme (axis.text.y=element_text(size=16)) # Aumentar o tamanho dos números no eixo y
 
 ```
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1h_DAE.png"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1i_DAE.png"/>
 
 ## Salvando a figura final em um arquivo .png
 
@@ -337,7 +349,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 # Salvar a figura final em formato .png
 # Para salvar o gráfico é necessário utilizar a função 'png' antes da função 'ggplot' 
 # e a dev.off() na última linha
-png(file="Figura1_DAE.png", width = 1000, height = 600) # Salvar a figura
+png(file="Figura1i_DAE.png", width = 1000, height = 600) # Salvar a figura
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen")+
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
