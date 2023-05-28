@@ -44,13 +44,11 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 ## Código e Planilhas de dados
 
+Aqui está todo o material do curso incluindo o código, as planilhas, os pdf e as figuras.
+
 - [Código `.R`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/riqueza_pronta.R)
 
-- [Planilha - Parcela_1 `.xlsx`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcela1_lado_esquerdo.xlsx)
-
-- [Planilha - Parcela_2 `.xlsx`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcela2_lado_direito.xlsx)
-
-- [Planilha - Simulação `.xlsx`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/parcelas_simulacao3.xlsx)
+- [Material para download](https://github.com/fblpalmeira/pronta_cientista/tree/main/data)
 
 -----
 
