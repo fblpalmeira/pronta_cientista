@@ -194,6 +194,8 @@ y1
 
 ```
 
+## Gráfico de barras mostrando a Distribuição de Abundância de Espécies 
+
 Após contar o número de espécies por indivíduos, iremos vizualizar esses dados em um simples gráfico de barras. Aproveite para verificar quais espécies foram mais abundante e quais foram raras. 
 
 ``` r
@@ -204,9 +206,9 @@ ggplot(y1, aes(Especie, N_individuos)) +
 
 ```
 
-## Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1a_DAE.png"/>
+
+## Organizando o gráfico em ordem crescente
 
 Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar a função "reorder" para ordenar as espécies de acordo com o número de indivíduos registrados.
 
@@ -219,9 +221,9 @@ ggplot(y1, aes(reorder(Especie, N_individuos), N_individuos)) +
   
 ```
 
-## Organizando o gráfico em ordem crescente
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1b_DAE.png"/>
+
+## Organizando o gráfico em ordem decrescente
 
 ``` r
 
@@ -235,9 +237,9 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ```
 
-## Organizando o gráfico em ordem decrescente
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1c_DAE.png"/>
+
+## Colorindo o gráfico
 
 ``` r
 
@@ -247,9 +249,9 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ```
 
-## Colorindo o gráfico
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1d_DAE.png"/>
+
+## Editando o tamanho das letras 
 
 ``` r
 
@@ -260,10 +262,9 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ```
 
-## Editando as legendas do gráfico
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1e_DAE.png"/>
 
+## Editando o tamanho dos números 
 
 ``` r
 
@@ -280,9 +281,9 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
          
 ```
 
-## Limpando o fundo do gráfico
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1f_DAE.png"/>
+
+## Limpando o fundo do gráfico
 
 ``` r
 
@@ -302,9 +303,9 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos)) +
 
 ```
 
-## Aumentando o tamanho das letras dos títulos dos eixos x e y
-
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1g_DAE.png"/>
+
+## Aumentando o tamanho das letras dos títulos dos eixos x e y
 
 ``` r
 
