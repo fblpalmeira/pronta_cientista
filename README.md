@@ -440,7 +440,7 @@ dev.off()
 
 ## Intepretação dos resultados
 
-Existiu diferença estatitica entre a riqueza e o número de espécies entre as parcelas amostradas no interior da Floresta?
+Existiu diferença estatitica entre a riqueza e o número de espécies nas parcelas amostradas?
 
 ----
 
