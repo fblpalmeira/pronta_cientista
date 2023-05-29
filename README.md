@@ -1,4 +1,4 @@
-# Pronta pra ser Cientista 2023, 4a. edição
+# [Pronta pra ser Cientista](https://sites.usp.br/prontacientista/), 4a. edição - 2023
 
 ## Aula 4, Ciência de Dados, 27 de maio de 2023 
 
