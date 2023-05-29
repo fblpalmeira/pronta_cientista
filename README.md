@@ -510,7 +510,18 @@ dev.off()
 
 ## Intepretação dos resultados
 
-Existiu diferença estatitica entre a riqueza e o número de espécies na borda e no interior da Floresta?
+Existiu diferença estatítica entre a riqueza e o número de espécies na borda e no interior da Floresta?
+
+-----
+
+
+## Vamos exercitar um pouco de programação fazendo um gráfico de waffle? 
+
+O gráfico de waffle é utilizado para representar proporções simples. Neste exercício, você poderá editar os argumentos da função e fazer um gráfico que conta a história da sua vida. Veja o exemplo abaixo e inspire-se. 
+
+Caso tenha alguma dúvida sobre o exercício é só seguir esse [Tutorial]().
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
 -----
 
