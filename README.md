@@ -519,7 +519,9 @@ Existiu diferença estatítica entre a riqueza e o número de espécies na borda
 
 O gráfico de waffle é utilizado para representar proporções simples. Neste exercício, você poderá editar os argumentos da função e fazer um gráfico que conta a história da sua vida. Veja o exemplo abaixo e inspire-se. 
 
-Caso tenha alguma dúvida sobre o exercício é só seguir esse [Tutorial]().
+Caso tenha alguma dúvida sobre o exercício é só seguir o tutorial abaixo.
+
+- [Tutorial para fazer um gráfico de waffle `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
