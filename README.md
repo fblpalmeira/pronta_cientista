@@ -523,6 +523,21 @@ O link do exercício está em um dos quatro links dispoibilizados no ínicio des
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
+## Edite o gráfico abaixo utilizando os dados da sua biografia
+
+``` r
+
+# Faça o seu gráfico aqui - Modelo 1
+png(file="Figura2_waffle.png", width = 1000, height = 600)
+parts <- c('Maternal'=1, 'Jardim'=3, 'Ensino Fundamental' = 4, 'Ensino Médio' = 5)
+waffle(parts, rows=3, title = "A minha vida em um gráfico de waffle", 
+       xlab = "1 quadrado = 12 meses")+
+       theme (legend.text =element_text (size = 15), axis.title.x=element_text(size = 20))+
+       labs(caption = "@Seu nome")
+dev.off()
+
+``` 
+
 -----
 
 ## Bibliografia básica
