@@ -119,7 +119,7 @@ View(y) # Vizualizar a planilha inteira
 
 ```
 
-Agora que já temos uma única planilha com os dados coletados, iremos salvá-la em um arquivo que, posteiormente, poderá ser lido no Excel.
+Agora que já temos uma única planilha com os dados coletados, iremos salvá-la em um arquivo que, posteriormente, poderá ser lido no Excel.
 É importante salvar todas as planilhas de entrada de dados e todas as figuras geradas durante as análises. 
 
 ``` r
