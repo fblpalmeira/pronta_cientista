@@ -34,7 +34,7 @@ Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parce
 
 Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão Preto.
 
-No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as as parcelas amostradas no campo. O objetivo da simulação será aumentar o esforço amostral para que possamos fazer os exercícios e interpretar os resultados.
+No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as parcelas amostradas no campo. O objetivo da simulação será aumentar o esforço amostral para que possamos fazer os exercícios e interpretar os resultados.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
 
