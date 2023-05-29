@@ -523,6 +523,8 @@ Caso tenha alguma dúvida sobre o exercício é só seguir o tutorial abaixo.
 
 - [Tutorial para fazer um gráfico de waffle `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
 
+O link do exercício está em um dos quatro links dispoibilizados no ínicio desta página, lá onde está o link do nosso exercício de riqueza e abundância de espécies
+
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
 -----
