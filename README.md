@@ -44,7 +44,7 @@ Figura 3. Transecto realizado na Floresta e localização das pareclas amostrada
 
 ## Código e Planilhas de dados
 
-Aqui está todo o material do curso incluindo o código dos exercícios, as planilhas .xlsx, os pdfs e as figuras.
+Aqui está todo o material do curso incluindo o código dos exercícios, as planilhas .xlsx, os arquivos .pdf e as figuras.
 
 - [Material para download](https://github.com/fblpalmeira/pronta_cientista/tree/main/data)
 
