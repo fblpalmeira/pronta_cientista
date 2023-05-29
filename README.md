@@ -44,7 +44,7 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 ## Código e Planilhas de dados
 
-Aqui está todo o material do curso incluindo o código, as planilhas, os pdf e as figuras.
+Aqui está todo o material do curso incluindo o código dos exercícios, as planilhas .xlsx, os pdfs e as figuras.
 
 - [Material para download](https://github.com/fblpalmeira/pronta_cientista/tree/main/data)
 
