@@ -38,7 +38,7 @@ No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Fl
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
 
-Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente simuladas.
+Figura 3. Transecto realizado na Floresta e localização das pareclas amostradas e simuladas.
 
 -----
 
