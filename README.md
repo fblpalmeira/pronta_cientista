@@ -46,8 +46,6 @@ Figura 3.  Localização das pareclas amostradas e das parcelas hipoteticamente 
 
 Aqui está todo o material do curso incluindo o código, as planilhas, os pdf e as figuras.
 
-- [Código `.R`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/riqueza_pronta.R)
-
 - [Material para download](https://github.com/fblpalmeira/pronta_cientista/tree/main/data)
 
 -----
