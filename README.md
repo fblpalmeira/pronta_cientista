@@ -440,6 +440,12 @@ Figura 5.  Comparar as duas parcelas amostradas (Parcela_1 e Parcela_2).
 
 ----
 
+## Intepretação dos resultados
+
+Existiu diferença estatitica entre a riqueza e o número de espécies entre as parcelas amostradas no interior da Floresta?
+
+----
+
 ## Construir uma curva de rarefação das espécies amostradas na borda e no interior
 
 ``` r
@@ -496,9 +502,15 @@ dev.off()
 
 ```
 
+## Figura 6.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura3_Rarefacao_Simulada_Borda_e_Interior.png" align="center" width = "800px"/>
 
-Figura 6.  Gráfico de barras mostrando a Distribuição de Abundância de Espécies das duas parcelas amostradas.
+-----
+
+## Intepretação dos resultados
+
+Existiu diferença estatitica entre a riqueza e o número de espécies na borda e no interior da Floresta?
 
 -----
 
