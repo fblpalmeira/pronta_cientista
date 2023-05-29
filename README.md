@@ -523,7 +523,7 @@ O link do exercício está em um dos quatro links dispoibilizados no ínicio des
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
-## Edite o gráfico abaixo utilizando os dados da sua biografia
+## Edite o gráfico de waffle abaixo utilizando os dados da sua biografia
 
 ``` r
 
