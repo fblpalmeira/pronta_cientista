@@ -2,7 +2,7 @@
 
 ## Aula 4, Ciência de Dados, 27 de maio de 2023 
 
-### Francesca B. L. Palmeira, francesca@alumni.usp.br 
+### [Francesca B. L. Palmeira](https://fblpalmeira.github.io/), francesca@alumni.usp.br 
 
 -----
 
