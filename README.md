@@ -28,13 +28,13 @@ A comunidade R é muito amigável e as pessoas que fazem parte dessas comunidade
 
 O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP em Ribeirão Preto, SP.
 
-Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela no interior da Floresta, uma do lado esquerdo e a outra do lado direito, com uma distância entre elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
+Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela de 30 x 30 metros no interior da Floresta, uma do lado esquerdo e a outra do lado direito, com uma distância entre elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas.png" align="center" width = "800px"/>
 
 Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão Preto.
 
-No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando no seis parcelas interior e seis na borda na borda, incluindo as duas parcelas que amostramos no campo. O objetivo da simulação será aumentar o esforço amostral para que possamos fazer os exercícios e interpretar os resultados.
+No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as as parcelas amostradas no campo. O objetivo da simulação será aumentar o esforço amostral para que possamos fazer os exercícios e interpretar os resultados.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
 
@@ -44,7 +44,7 @@ Figura 3. Transecto realizado na Floresta e localização das pareclas amostrada
 
 ## Código e Planilhas de dados
 
-No link abaixo, está todo o material do curso incluindo o código dos exercícios, as planilhas .xlsx, os arquivos .pdf e as figuras.
+No link abaixo, está todo o material do curso incluindo o código dos exercícios, as planilhas .xlsx, os tutoriais em .pdf, etc.
 
 - [Material para download](https://github.com/fblpalmeira/pronta_cientista/tree/main/data)
 
@@ -432,7 +432,7 @@ dev.off()
 
 ``` 
 
-## Comparando as duas parcelas amostradas (Parcela_1 e Parcela_2)
+## Comparando as duas parcelas amostradas 
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2.png" align="center" width = "800px"/>
 
@@ -512,16 +512,15 @@ Existiu diferença estatítica entre a riqueza e o número de espécies na borda
 
 -----
 
-
 ## Vamos exercitar um pouco de programação fazendo um gráfico de waffle? 
 
 O gráfico de waffle é utilizado para representar proporções simples. Neste exercício, você poderá editar os argumentos da função e fazer um gráfico que conta a história da sua vida. Veja o exemplo abaixo e inspire-se. 
 
 O link do exercício está em um dos quatro links dispoibilizados no ínicio desta página, lá onde está o link do nosso exercício de riqueza e abundância de espécies. Caso tenha alguma dúvida sobre o exercício é só seguir o tutorial abaixo.
 
-- [Tutorial para fazer um gráfico de waffle `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
+- [Tutorial para fazer um gráfico de waffle `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Waffle_Pronta_Cientista_2023_05_27.pdf)
 
-## Edite o gráfico de waffle abaixo utilizando os dados da sua biografia
+## Edite o gráfico abaixo utilizando os dados da sua biografia
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
