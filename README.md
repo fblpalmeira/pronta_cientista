@@ -261,7 +261,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1e_DAE.png"/>
 
-## Limpando o fundo do gráfico
+## Limpando o plano de fundo
 
 ``` r
 
@@ -275,7 +275,7 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1f_DAE.png"/>
 
-## Limpando a grade de fundo
+## Limpando a grade de linhas
 
 ``` r
 
