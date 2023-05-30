@@ -87,17 +87,17 @@ Carregar e manipular os dados no `R`:
 install.packages("readxl") # Instalar 
 library(readxl) # Abrir 
 
+``` 
+
+## Vizualizar a planilha a parcela 1
+
+``` r
+
 # Criar um objeto para ler as planilhas de campo utilizando a função "read_excel"
 # O nome do objeto (ex.: p1, p2, y) é editável e você pode mudar se necessário
 # É importante que o nome do objeto seja curto e não tenha acento
 p1 <- read_excel("parcela1_lado_esquerdo.xlsx", na = "-") # Ler a planilha da parcela 1
 p1 # Vizualizar a planilha 1 parcialmente
-
-``` 
-
-## Vizualizar a planilha 1
-
-``` r
 
 # A tibble: 12 × 12
       ID Especie Familia Classificacao N_individuos Caracteristica Estado Local Latitude Longitude Parcela Observacao
@@ -142,19 +142,15 @@ p2 # Vizualizar a planilha 2 parcialmente
 
 ``` 
 
-# Juntar as duas planilhas (p1 e p2) em um único objeto (y) utilizando a função "rbind"
+# Juntar as duas planilhas (p1 e p2) em um único objeto (y) 
+
+A união das duas planilhas (p1 e p2) utilizando a função "rbind" resultará no objeto (y) a seguir:
 
 ``` r
 
 # Juntar as duas planilhas (p1 e p2) em um único objeto (y) utilizando a função "rbind"
 y <- rbind (p1, p2)
 y # Vizualizar a planilha parcialmente
-
-```
-
-## A união das duas planilhas (p1 e p2) resultará no objeto (y) a seguir:
-
-``` r
 
 # A tibble: 23 × 12
       ID Especie Familia   Classifica…¹ N_ind…² Carac…³ Estado Local Latit…⁴ Longi…⁵ Parcela Obser…⁶
@@ -175,7 +171,7 @@ y # Vizualizar a planilha parcialmente
 
 ```
 
-## Vizualizando a planilha inteira:
+## Vizualizando a planilha inteira
 
 Utilize o comando 'View' para visualizar a planilha inteira. Cada linha representa uma observação e cada coluna representa uma variável.
 
@@ -184,7 +180,6 @@ Utilize o comando 'View' para visualizar a planilha inteira. Cada linha represen
 View(y) # Vizualizar a planilha inteira
 
 ``` 
-Tabela 1. Planilha dos dados coletados nas parcelas 1 e 2.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Planilha_parcelas_1_e_2.png"/>
 
