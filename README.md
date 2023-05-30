@@ -452,11 +452,11 @@ png(file="Figura1i_DAE.png", width = 1000, height = 600) # Salvar a figura
 ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
   geom_col(fill = "darkgreen")+
   labs(x = "Nome das espécies", y = "Número de indivíduos (n)")+
-  theme_bw()+
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank())+ 
+ theme_bw()+
   theme (panel.grid.major.x = element_blank(), 
          panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
   theme (axis.title.x = element_text(size=20))+ 
   theme (axis.title.y = element_text(size=20))+
   theme (axis.text.x = element_text(size=16))+ 
@@ -684,11 +684,11 @@ ggiNEXT(estimates) +
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank()) + 
+  theme_bw()+
   theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank()) +
+         panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
   theme (axis.text.x = element_text(size=12)) +
   theme (axis.text.y = element_text(size=12))
   
@@ -707,11 +707,11 @@ ggiNEXT(estimates) +
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank()) + 
+  theme_bw()+
   theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank()) +
+         panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
   theme (axis.text.x = element_text(size=12)) +
   theme (axis.text.y = element_text(size=12))
 dev.off()
@@ -774,11 +774,11 @@ geom_vline(xintercept = 67, lty = 2) +
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) + 
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
-  theme_bw() +
-  theme (panel.grid.major.y = element_blank(), 
-         panel.grid.minor.y = element_blank()) + 
+  theme_bw()+
   theme (panel.grid.major.x = element_blank(), 
-         panel.grid.minor.x = element_blank()) +
+         panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
   theme (axis.text.x = element_text(size=12)) +
   theme (axis.text.y = element_text(size=12))
 dev.off()
