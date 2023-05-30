@@ -28,33 +28,39 @@ A comunidade R é muito amigável e as pessoas que fazem parte dessas comunidade
 
 O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP em Ribeirão Preto, SP.
 
-Durante o trabalho de campo, formamos duas equipes e cada uma amostrou uma parcela de 30 x 30 metros no interior da Floresta, uma do lado esquerdo e a outra do lado direito, com uma distância entre elas de aproximadamente 30 metros. A amostragem durou cerca de 30 minutos em cada parcela.
+Durante o trabalho de campo, cada grupo de trabalho amostrou uma parcela de 30 x 30 metros no interior da Floresta, uma do lado esquerdo e a outra do lado direito, com uma distância de aproximadamente 30 metros entre as parcelas. A amostragem durou cerca de 30 minutos em cada parcela.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas.png" align="center" width = "800px"/>
 
 Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão Preto.
 
-No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as parcelas amostradas no campo. O objetivo da simulação será aumentar o esforço amostral para que possamos fazer os exercícios e interpretar os resultados.
+No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as parcelas amostradas no campo. Os dados simulados serão utilizados para testar se existe diferença significativa entre a riqueza e a abundância de indivíduos na borda e no interior da floresta.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
 
-Figura 3. Transecto realizado na Floresta e localização das pareclas amostradas e simuladas.
+Figura 3. Transecto realizado na Floresta e localização das pareclas amostradas (em amarelo) e simuladas (em branco).
 
 -----
 
 ## Código e Planilhas de dados
 
-No link abaixo, está todo o material do curso incluindo o código dos exercícios, as planilhas .xlsx, os tutoriais em .pdf, etc.
+No link abaixo, está todo o material da aula incluindo o código dos exercícios, as planilhas .xlsx, os tutoriais em .pdf, etc.
 
 - [Material para download](https://github.com/fblpalmeira/pronta_cientista/tree/main/data)
 
 -----
 
-## Links dos exercícios no [Posit Cloud](https://posit.cloud/)
+## Links dos exercícios no Posit Cloud
+
+Vamos fazer os exercícios utilizando uma ferramenta do [RStudio](https://posit.co/download/rstudio-desktop/) que está disponível na nuvem, sem precisar instalar de nenhum programa ou software no computador. Primeiro, você deverá criar uma conta pesssoal no [Posit Cloud](https://posit.cloud/). O site é seguro e não precisa pagar nada pois vamos optar pelo plano gratuito. Lembre-se que para acessar os exercícios online, você vai precisar de internet e deverá entrar com o seu email particular.
+
+O tutorial abaixo tem o passo a passo para abrir a conta. 
 
 - [Tutorial para abrir uma conta no Posit Cloud `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
 
-- [Link1 `.R`](https://posit.cloud/content/5718175)
+A seguir, 
+
+- [Link1 `.R`](https://posit.cloud/content/5718175) 
 
 - [Link2 `.R`](https://posit.cloud/content/6029576)
 
