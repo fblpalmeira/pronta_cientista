@@ -551,7 +551,7 @@ str(y3)
 
 ``` 
 
-# Vizualizar a planilha
+# Visualizar a planilha
 
 ``` r
 
