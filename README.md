@@ -56,7 +56,7 @@ Vamos fazer os exercícios utilizando a [linguagem R](https://www.r-project.org/
 
 - [Tutorial para abrir uma conta no Posit Cloud `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
 
-A seguir, 
+A seguir, precisaremos acessar os exercícios clicando em qualquer um dos links abaixo. Dentro de cada link, tem o mesmo material. Como estamos utilizando o plano gratuito, apenas cinco pessoas podem acessar simultaneamente cada link. Caso algum link não funcione, pode ser que tenha mais de cinco pessoas tentando acessar ao mesmo tempo. Quando isso acontecer, tente acesso pelos outros links. 
 
 - [Link1 `.R`](https://posit.cloud/content/5718175) 
 
