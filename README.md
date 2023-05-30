@@ -196,7 +196,7 @@ y1
 
 ## Gráfico de barras mostrando a Distribuição de Abundância de Espécies 
 
-Após contar o número de espécies por indivíduos, iremos vizualizar esses dados em um simples gráfico de barras. Aproveite para verificar quais espécies foram mais abundante e quais foram raras. 
+Após contar o número de espécies por indivíduos, iremos visualizar esses dados em um simples gráfico de barras. Aproveite para verificar quais espécies foram mais abundante e quais foram raras. 
 
 ``` r
 
@@ -210,7 +210,7 @@ ggplot(y1, aes(Especie, N_individuos))+
 
 ## Organizando o gráfico em ordem crescente
 
-Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar a função "reorder" para ordenar as espécies de acordo com o número de indivíduos registrados.
+Finalmente, temos um gráfico! Agora vamos deixá-lo mais intuitivo e utilizar a função "reorder" para ordenar as espécies conforme o número de indivíduos registrados.
 
 ``` r
 
@@ -442,9 +442,9 @@ dev.off()
 
 ----
 
-## Intepretação dos resultados
+## Interpretação dos resultados
 
-Existiu diferença estatitica entre a riqueza e o número de espécies nas parcelas amostradas?
+Existiu diferença estatística entre a riqueza e o número de espécies nas parcelas amostradas?
 
 ----
 
@@ -510,9 +510,9 @@ dev.off()
 
 -----
 
-## Intepretação dos resultados
+## Interpretação dos resultados
 
-Existiu diferença estatítica entre a riqueza e o número de espécies na borda e no interior da Floresta?
+Existiu diferença estatística entre a riqueza e o número de espécies na borda e no interior da Floresta?
 
 -----
 
@@ -520,13 +520,11 @@ Existiu diferença estatítica entre a riqueza e o número de espécies na borda
 
 O gráfico de waffle é utilizado para representar proporções. Neste exercício, você poderá editar os argumentos da função e fazer um gráfico que conta a história da sua vida. Veja o exemplo abaixo e inspire-se. 
 
-O código do exercício está em um dos quatro links disponibilizados no ínicio desta página, junto com o código dos nossos exercícios de riqueza e abundância de espécies. Caso tenha alguma dúvida sobre o exercício é só seguir o tutorial abaixo. Lá tem todo o passo a passo de como construir o gráfico e exportar a figura para o seu computador.
+O código do exercício está em um dos quatro links disponibilizados no início desta página. Caso tenha alguma dúvida sobre o exercício é só seguir o tutorial abaixo. No tutorial, tem todo o passo a passo de como construir o gráfico da sua biografia e, ao final, exportá-lo para o seu computador.
 
 - [Tutorial para fazer um gráfico de waffle `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Waffle_Pronta_Cientista_2023_05_27.pdf)
 
-## Edite o gráfico abaixo utilizando os dados da sua biografia
-
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
+## Edite o código abaixo utilizando os dados da sua biografia
 
 ``` r
 
@@ -540,6 +538,10 @@ waffle(parts, rows=3, title = "A minha vida em um gráfico de waffle",
 dev.off()
 
 ``` 
+
+## A vida da cientista em um gráfico de waffle
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
 -----
 
