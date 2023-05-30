@@ -619,6 +619,64 @@ library(iNEXT)
 estimates <- iNEXT(y3, datatype = "abundance", endpoint = 100)
 estimates
 
+Compare 2 assemblages with Hill number order q = 0.
+$class: iNEXT
+
+$DataInfo: basic data information
+  Assemblage  n S.obs     SC f1 f2 f3 f4 f5 f6 f7 f8 f9 f10
+1  Parcela_1 72    12 0.9869  1  2  0  3  3  0  0  2  0   0
+2  Parcela_2 39    11 0.8744  5  2  1  0  0  0  1  1  0   0
+
+$iNextEst: diversity estimates with rarefied and extrapolated samples.
+$size_based (LCL and UCL are obtained for fixed size.)
+
+   Assemblage   m        Method Order.q        qD    qD.LCL    qD.UCL        SC     SC.LCL    SC.UCL
+1   Parcela_1   1   Rarefaction       0  1.000000  1.000000  1.000000 0.1494523 0.10558753 0.1933170
+10  Parcela_1  36   Rarefaction       0 10.749383  9.601695 11.897071 0.9272886 0.89465989 0.9599173
+20  Parcela_1  72      Observed       0 12.000000 10.284932 13.715068 0.9868519 0.95694718 1.0000000
+30  Parcela_1  85 Extrapolation       0 12.125627 10.226138 14.025116 0.9935520 0.96753382 1.0000000
+40  Parcela_1 100 Extrapolation       0 12.193392 10.076838 14.309946 0.9971661 0.97498476 1.0000000
+41  Parcela_2   1   Rarefaction       0  1.000000  1.000000  1.000000 0.1619433 0.07859917 0.2452875
+50  Parcela_2  19   Rarefaction       0  7.791217  5.768308  9.814126 0.7991995 0.71133271 0.8870662
+60  Parcela_2  39      Observed       0 11.000000  7.673831 14.326169 0.8744383 0.78834040 0.9605362
+70  Parcela_2  68 Extrapolation       0 13.761591  8.615921 18.907261 0.9313783 0.84487026 1.0000000
+80  Parcela_2 100 Extrapolation       0 15.381054  8.149982 22.612126 0.9647693 0.89236559 1.0000000
+
+NOTE: The above output only shows five estimates for each assemblage; call iNEXT.object$iNextEst$size_based to view complete output.
+
+$coverage_based (LCL and UCL are obtained for fixed coverage; interval length is wider due to varying size in bootstraps.)
+
+   Assemblage        SC   m        Method Order.q       qD    qD.LCL    qD.UCL
+1   Parcela_1 0.1494523   1   Rarefaction       0  1.00000 0.8417931  1.158207
+10  Parcela_1 0.9272886  36   Rarefaction       0 10.74938 9.0470248 12.451741
+20  Parcela_1 0.9868519  72      Observed       0 12.00000 8.6935173 15.306483
+30  Parcela_1 0.9935520  85 Extrapolation       0 12.12563 8.4698923 15.781362
+40  Parcela_1 0.9971661 100 Extrapolation       0 12.19339 8.3384048 16.048380
+41  Parcela_2 0.1619433   1   Rarefaction       0  1.00000 0.8341096  1.165890
+50  Parcela_2 0.7991996  19   Rarefaction       0  7.79122 2.9802910 12.602149
+60  Parcela_2 0.8744383  39      Observed       0 11.00000 1.9971339 20.002866
+70  Parcela_2 0.9313783  68 Extrapolation       0 13.76159 1.5440781 25.979103
+80  Parcela_2 0.9647693 100 Extrapolation       0 15.38105 1.1373726 29.624736
+
+NOTE: The above output only shows five estimates for each assemblage; call iNEXT.object$iNextEst$coverage_based to view complete output.
+
+$AsyEst: asymptotic diversity estimates along with related statistics.
+  Assemblage         Diversity  Observed Estimator     s.e.       LCL       UCL
+1  Parcela_1  Species richness 12.000000 12.246528 2.669462 12.000000 17.478578
+2  Parcela_1 Shannon diversity  8.587949  9.334010 1.014292  7.346035 11.321985
+3  Parcela_1 Simpson diversity  6.200957  6.691099 1.149521  4.438080  8.944119
+4  Parcela_2  Species richness 11.000000 17.089744 7.581706 11.000000 31.949615
+5  Parcela_2 Shannon diversity  7.153175  8.995239 1.883865  5.302931 12.687548
+6  Parcela_2 Simpson diversity  5.451613  6.175000 1.407739  3.415882  8.934118
+
+```
+
+## Curva de rarefação de espécies 
+
+A comparação da riqueza de espécies entre as comunidades deve ser feita com base na riqueza de espécies rarefeita, que é calculada com base no número de indivíduos da parcela de amostragem com menor abundância [(Da Silva et al. 2022 - Análises ecológicas no R)](https://analises-ecologicas.netlify.app/cap10.html).
+
+``` r
+
 # A comparação da riqueza de espécies entre as comunidades deve ser feita com base na riqueza 
 # de espécies rarefeita, que é calculada com base no número de indivíduos da parcela 
 # de amostragem com menor abundância (Da Silva et al. 2022 - Análises ecológicas no R)
