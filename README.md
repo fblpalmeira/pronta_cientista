@@ -524,7 +524,10 @@ O código do exercício está em um dos quatro links disponibilizados no início
 
 - [Tutorial para fazer um gráfico de waffle `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Waffle_Pronta_Cientista_2023_05_27.pdf)
 
-## Edite o código abaixo utilizando os dados da sua biografia
+
+## A vida da cientista em um gráfico de waffle
+
+Edite o código abaixo utilizando os dados da sua biografia.
 
 ``` r
 
@@ -538,8 +541,6 @@ waffle(parts, rows=3, title = "A minha vida em um gráfico de waffle",
 dev.off()
 
 ``` 
-
-## A vida da cientista em um gráfico de waffle
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura1_waffle.png" align="center" width = "800px"/>
 
