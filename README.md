@@ -142,7 +142,7 @@ p2 # Vizualizar a planilha 2 parcialmente
 
 ``` 
 
-# Juntar as duas planilhas (p1 e p2) em um único objeto (y) 
+# Juntar as duas planilhas em um único objeto 
 
 A união das duas planilhas (p1 e p2) utilizando a função "rbind" resultará no objeto (y) a seguir:
 
