@@ -89,7 +89,7 @@ library(readxl) # Abrir
 
 ``` 
 
-## Vizualizar a planilha da [Parcela 1](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/planilha_de_campo_parcela_1_lado_esquerdo.jpeg)
+## Vizualizar a [Planilha da Parcela 1](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/planilha_de_campo_parcela_1_lado_esquerdo.jpeg)
 
 ``` r
 
@@ -117,7 +117,7 @@ p1 # Vizualizar a planilha 1 parcialmente
 
 ``` 
 
-## Vizualizar a planilha da [Parcela 2](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/planilha_de_campo_parcela_2_lado_direito.jpeg)
+## Vizualizar a [Planilha da Parcela 2](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/planilha_de_campo_parcela_2_lado_direito.jpeg)
 
 ``` r
 
@@ -201,31 +201,18 @@ write.xlsx(y, "parcelas_1_e_2_juntas.xlsx") # Salvar o arquivo utilizando a fun�
 
 ## Vamos começar a explorar os dados coletados? 
 
-Utilizando as funções abaixo podemos explorar os dados, visualizar a planilha, conhecer a estrutura interna de cada variável, ver as médias e medianas de cada variável numérica, os valores máximo e mínimo, entre outras informações.
+Utilizando as funções abaixo podemos conhecer a estrutura interna dos dados (vaariável numérica, categórica, etc.), ver as médias e medianas de cada variável, os valores máximo e mínimo, entre outras informações.
+
+----
+
+# Verificando a estrutura interna de cada variável 
 
 ``` r
 
 # Explorando os dados 
 # Os comandos a seguir servem para conhecermos a estrutura dos dados e verificar 
-# quais deles são numéricos e quais são categóricos
-head(y)    # Visualizar as seis primeiras linhas do objeto
-
-# A tibble: 6 × 12
-     ID Especie Familia   Classificacao N_individuos Caracteristica       Estado     Local    Latitude Longitude Parcela   Observacao                    
-  <dbl> <chr>   <chr>     <chr>                <dbl> <chr>                <chr>      <chr>       <dbl>     <dbl> <chr>     <chr>                         
-1     1 sp1     Piperacea Herbácea                 8 Folha oval com bico  Com frutos Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
-2     2 sp2     NA        Arvoreta                 8 Folha longa e áspera Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
-3     3 sp3     NA        Árvore                   4 Árvore cumprida      Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
-4     4 sp4     NA        Árvore                   2 Folha pequena        Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
-5     5 sp5     NA        Trepadeira               2 Folha enroladinha    Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
-6     6 sp6     NA        Herbácea                 5 Sai do mesmo ponto   Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
-
-``` 
-
-# Ver a estrutura interna de cada variável 
-
-``` r
-
+# quais deles são numéricos, quais são categóricos e os valores mínimo e máximo de
+# cada variável
 str(y)     # Exibe a estrutura interna de cada variável dentro do objeto 
 
 tibble [23 × 12] (S3: tbl_df/tbl/data.frame)
