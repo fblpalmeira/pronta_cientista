@@ -410,8 +410,8 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
          panel.grid.minor.x = element_blank())+
   theme (panel.grid.major.y = element_blank(), 
          panel.grid.minor.y = element_blank())+
-  theme (axis.title.x=element_text(size=20))+ # Aumentar as letras no eixo x
-  theme (axis.title.y=element_text(size=20)) # Aumentar as letras no eixo y
+  theme (axis.title.x = element_text(size=20))+ # Aumentar as letras no eixo x
+  theme (axis.title.y = element_text(size=20)) # Aumentar as letras no eixo y
 
 ```
 
@@ -432,10 +432,10 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
          panel.grid.minor.x = element_blank())+
   theme (panel.grid.major.y = element_blank(), 
          panel.grid.minor.y = element_blank())+
-  theme (axis.title.x=element_text(size=20))+ 
-  theme (axis.title.y=element_text(size=20))+
-  theme (axis.text.x=element_text(size=16))+ # Aumentar o tamanho dos números no eixo x
-  theme (axis.text.y=element_text(size=16)) # Aumentar o tamanho dos números no eixo y
+  theme (axis.title.x = element_text(size=20))+ 
+  theme (axis.title.y = element_text(size=20))+
+  theme (axis.text.x = element_text(size=16))+ # Aumentar o tamanho dos números no eixo x
+  theme (axis.text.y = element_text(size=16)) # Aumentar o tamanho dos números no eixo y
 
 ```
 
@@ -457,10 +457,10 @@ ggplot(y1, aes(reorder(Especie, -N_individuos, sum), N_individuos))+
          panel.grid.minor.y = element_blank())+ 
   theme (panel.grid.major.x = element_blank(), 
          panel.grid.minor.x = element_blank())+
-  theme (axis.title.x=element_text(size=20))+ 
-  theme (axis.title.y=element_text(size=20))+
-  theme (axis.text.x=element_text(size=16))+ 
-  theme (axis.text.y=element_text(size=16))
+  theme (axis.title.x = element_text(size=20))+ 
+  theme (axis.title.y = element_text(size=20))+
+  theme (axis.text.x = element_text(size=16))+ 
+  theme (axis.text.y = element_text(size=16))
 dev.off() # Salvar a figura
 
 ``` 
@@ -480,7 +480,7 @@ dev.off() # Salvar a figura
 
 # Abrir pacote para remodelar a tabela de dados
 library(reshape2)
-y2 <- dcast(y, Especie ~ Parcela, value.var="N_individuos")
+y2 <- dcast(y, Especie ~ Parcela, value.var = "N_individuos")
 y2
 
    Especie Parcela_1 Parcela_2
@@ -616,7 +616,7 @@ Parcela_1 Parcela_2
 #Abrir pacote para fazer a interpolação e extrapolação dos dados
 # Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
 library(iNEXT)
-estimates <- iNEXT(y3, datatype="abundance", endpoint=100)
+estimates <- iNEXT(y3, datatype = "abundance", endpoint = 100)
 
 # A comparação da riqueza de espécies entre as comunidades deve ser feita com base na riqueza 
 # de espécies rarefeita, que é calculada com base no número de indivíduos da parcela 
@@ -630,8 +630,8 @@ ggiNEXT(estimates) +
          panel.grid.minor.y = element_blank()) + 
   theme (panel.grid.major.x = element_blank(), 
          panel.grid.minor.x = element_blank()) +
-  theme (axis.text.x=element_text(size=12)) +
-  theme (axis.text.y=element_text(size=12))
+  theme (axis.text.x = element_text(size=12)) +
+  theme (axis.text.y = element_text(size=12))
   
 ```   
 
@@ -653,8 +653,8 @@ ggiNEXT(estimates) +
          panel.grid.minor.y = element_blank()) + 
   theme (panel.grid.major.x = element_blank(), 
          panel.grid.minor.x = element_blank()) +
-  theme (axis.text.x=element_text(size=12)) +
-  theme (axis.text.y=element_text(size=12))
+  theme (axis.text.x = element_text(size=12)) +
+  theme (axis.text.y = element_text(size=12))
 dev.off()
 
 ``` 
@@ -691,7 +691,7 @@ y6 <- rbind(y4, y5)
 write.xlsx(y6, 'parcelas_1_e_2_juntas_e_simuladas.xlsx')
 
 # Remodelar a tabela de dados
-y7 <- dcast(y6, Especie ~ Local, value.var="N_individuos")
+y7 <- dcast(y6, Especie ~ Local, value.var = "N_individuos")
 y7
 
 # Transformar o data.frame y2 em "integer"
@@ -705,7 +705,7 @@ row.names(y8) <- y7[,1]
 colSums(y8)
 
 # Comparar as parcelas da Borda e do Interior
-estimates2 <- iNEXT(y8, datatype="abundance", endpoint=100)
+estimates2 <- iNEXT(y8, datatype = "abundance", endpoint = 100)
 
 # Salvar a figura 
 png(file="Figura3_Rarefacao_Simulada_Borda_e_Interior.png", width = 1000, height = 600)
@@ -719,8 +719,8 @@ geom_vline(xintercept = 10, lty = 2) +
          panel.grid.minor.y = element_blank()) + 
   theme (panel.grid.major.x = element_blank(), 
          panel.grid.minor.x = element_blank()) +
-  theme (axis.text.x=element_text(size=12)) +
-  theme (axis.text.y=element_text(size=12))
+  theme (axis.text.x = element_text(size=12)) +
+  theme (axis.text.y = element_text(size=12))
 dev.off()
 
 ```
