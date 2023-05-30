@@ -505,7 +505,21 @@ y2
 
 # Substituir os NA's por zeros
 y2 <- y2 %>% replace(is.na(.), 0) 
-str(y2)
+y2
+
+   Especie Parcela_1 Parcela_2
+1      sp1         8         8
+2     sp10         1         1
+3     sp11         5         1
+4     sp12         4         0
+5      sp2         8         1
+6      sp3         4         3
+7      sp4         2         7
+8      sp5         2         1
+9      sp6         5         1
+10     sp7         5         2
+11     sp8         4        12
+12     sp9        24         2
 
 ``` 
 
