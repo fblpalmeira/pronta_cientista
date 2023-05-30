@@ -617,6 +617,7 @@ Parcela_1 Parcela_2
 # Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
 library(iNEXT)
 estimates <- iNEXT(y3, datatype = "abundance", endpoint = 100)
+estimates
 
 # A comparação da riqueza de espécies entre as comunidades deve ser feita com base na riqueza 
 # de espécies rarefeita, que é calculada com base no número de indivíduos da parcela 
@@ -706,6 +707,7 @@ colSums(y8)
 
 # Comparar as parcelas da Borda e do Interior
 estimates2 <- iNEXT(y8, datatype = "abundance", endpoint = 100)
+estimates2
 
 # Salvar a figura 
 png(file="Figura3_Rarefacao_Simulada_Borda_e_Interior.png", width = 1000, height = 600)
