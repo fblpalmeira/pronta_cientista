@@ -52,9 +52,7 @@ No link abaixo, está todo o material da aula incluindo o código dos exercício
 
 ## Links dos exercícios no Posit Cloud
 
-Vamos fazer os exercícios utilizando uma ferramenta do [RStudio](https://posit.co/download/rstudio-desktop/) que está disponível na nuvem, sem precisar instalar de nenhum programa ou software no computador. Primeiro, você deverá criar uma conta pesssoal no [Posit Cloud](https://posit.cloud/). O site é seguro e não precisa pagar nada pois vamos optar pelo plano gratuito. Lembre-se que para acessar os exercícios online, você vai precisar de internet e deverá entrar com o seu email particular.
-
-O tutorial abaixo tem o passo a passo para abrir a conta. 
+Vamos fazer os exercícios utilizando a [linguagem R](https://www.r-project.org/about.html) em uma versão do [RStudio](https://posit.co/download/rstudio-desktop/) que está disponível na nuvem, sem precisar instalar de nenhum programa ou software no computador. Primeiro, você deverá criar uma conta pessoal no [Posit Cloud](https://posit.cloud/). O site é seguro e não precisa pagar nada, pois vamos optar pelo plano gratuito. Lembre-se que para acessar os exercícios online, você vai precisar de internet e deverá entrar com o seu email particular. O tutorial abaixo tem o passo a passo para abrir a conta. 
 
 - [Tutorial para abrir uma conta no Posit Cloud `.pdf`](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Tutotial_RStudio_Cloud_Abrir_Conta_Pronta_Cientista_2023_05_27.pdf)
 
