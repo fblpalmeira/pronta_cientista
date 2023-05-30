@@ -155,7 +155,7 @@ summary(y) # Exibe o resumo de cada variável mostrando as amplitudes mínima e 
 
 ```
 
-Agora nós vamos precisar manipular alguns dados da planilha para fazer o gráfico. Primeiro, iremos filtrar a coluna "Especies" e "N_individuos" e depois iremos contar quantos indivíduos por espécie registramos nas duas parcelas amostradas.
+Agora, vamos precisar manipular alguns dados da planilha para fazer o gráfico. Primeiro, iremos filtrar a coluna "Especies" e "N_individuos" e depois iremos contar quantos indivíduos por espécie registramos nas duas parcelas amostradas.
 
 ``` r
 
@@ -172,7 +172,7 @@ y1
 
 ``` 
 
-## Após a filtragem dos dados teremos a seguinte tabela de dados (y1):
+## Após a filtragem dos dados teremos o objeto (y1) a seguir:
 
 ``` r
 
