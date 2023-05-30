@@ -220,6 +220,12 @@ head(y)    # Visualizar as seis primeiras linhas do objeto
 5     5 sp5     NA        Trepadeira               2 Folha enroladinha    Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
 6     6 sp6     NA        Herbácea                 5 Sai do mesmo ponto   Vegetativo Interior    -21.2     -47.9 Parcela_1 O desenho da folha consta na …
 
+``` 
+
+# Ver a estrutura interna de cada variável 
+
+``` r
+
 str(y)     # Exibe a estrutura interna de cada variável dentro do objeto 
 
 tibble [23 × 12] (S3: tbl_df/tbl/data.frame)
@@ -235,6 +241,12 @@ tibble [23 × 12] (S3: tbl_df/tbl/data.frame)
  $ Longitude     : num [1:23] -47.9 -47.9 -47.9 -47.9 -47.9 ...
  $ Parcela       : chr [1:23] "Parcela_1" "Parcela_1" "Parcela_1" "Parcela_1" ...
  $ Observacao    : chr [1:23] "O desenho da folha consta na planilha original" "O desenho da folha consta na planilha original" "O desenho da folha consta na planilha original" "O desenho da folha consta na planilha original" ...
+
+``` 
+
+# Ver as amplitudes mínima e máxima, a média e a mediana de cada variável
+
+``` r
 
 summary(y) # Exibe o resumo de cada variável mostrando as amplitudes mínima e máxima, a média e a mediana
 
