@@ -523,13 +523,53 @@ y2
 
 ``` 
 
-## Transformar o data.frame y2 em "integer"
+## Verificando a estrutura interna de cada variável 
+
+``` r
+
+str(y2)
+
+'data.frame':	12 obs. of  3 variables:
+ $ Especie  : chr  "sp1" "sp10" "sp11" "sp12" ...
+ $ Parcela_1: num  8 1 5 4 8 4 2 2 5 5 ...
+ $ Parcela_2: num  8 1 1 0 1 3 7 1 1 2 ...
+
+``` 
+
+## Transformar o data.frame y2 em uma matriz "integer"
 
 ``` r
 
 # Transformar o data.frame y2 em "integer"
 y3 <- as.matrix(apply(y2[,-1],2,as.integer))
 str(y3)
+
+ int [1:12, 1:2] 8 1 5 4 8 4 2 2 5 5 ...
+ - attr(*, "dimnames")=List of 2
+  ..$ : NULL
+  ..$ : chr [1:2] "Parcela_1" "Parcela_2"
+
+``` 
+
+# Vizualizar a planilha
+
+``` r
+
+y3
+
+  Parcela_1 Parcela_2
+ [1,]         8         8
+ [2,]         1         1
+ [3,]         5         1
+ [4,]         4         0
+ [5,]         8         1
+ [6,]         4         3
+ [7,]         2         7
+ [8,]         2         1
+ [9,]         5         1
+[10,]         5         2
+[11,]         4        12
+[12,]        24         2
 
 ``` 
 
@@ -539,6 +579,21 @@ str(y3)
 
 # Informar os nomes da espécies 
 row.names(y3) <- y2[,1]
+y3
+
+  Parcela_1 Parcela_2
+sp1          8         8
+sp10         1         1
+sp11         5         1
+sp12         4         0
+sp2          8         1
+sp3          4         3
+sp4          2         7
+sp5          2         1
+sp6          5         1
+sp7          5         2
+sp8          4        12
+sp9         24         2
 
 ``` 
 
@@ -548,6 +603,14 @@ row.names(y3) <- y2[,1]
 
 # Contar o número de indivíduos por parcela
 colSums(y3)
+
+Parcela_1 Parcela_2 
+       72        39 
+
+``` 
+
+
+``` r
 
 #Abrir pacote para fazer a interpolação e extrapolação dos dados
 # Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
