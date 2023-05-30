@@ -609,6 +609,7 @@ Parcela_1 Parcela_2
 
 ``` 
 
+## Comparando as duas parcelas amostradas
 
 ``` r
 
@@ -631,8 +632,16 @@ ggiNEXT(estimates) +
          panel.grid.minor.x = element_blank()) +
   theme (axis.text.x=element_text(size=12)) +
   theme (axis.text.y=element_text(size=12))
+  
+```   
 
-# Inserir uma linha vertical tracedaja na Parcela_2 e salvar a figura final  
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_semm_linha.png" align="center" width = "800px"/>
+
+# Inserir uma linha vertical tracejada e salvar a figura 
+
+``` r
+
+# Inserir uma linha vertical tracejada na Parcela_2 e salvar a figura final  
 png(file="Figura2_Rarefacao_Parcelas_1_e_2.png", width = 1000, height = 600)
 ggiNEXT(estimates) +
   geom_vline(xintercept = 10, lty = 2) +
@@ -650,9 +659,7 @@ dev.off()
 
 ``` 
 
-## Comparando as duas parcelas amostradas 
-
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2.png" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_com_linha.png" align="center" width = "800px"/>
 
 ----
 
