@@ -201,7 +201,7 @@ write.xlsx(y, "parcelas_1_e_2_juntas.xlsx") # Salvar o arquivo utilizando a fun�
 
 ## Vamos começar a explorar os dados coletados? 
 
-Utilizando as funções abaixo podemos conhecer a estrutura interna dos dados (vaariável numérica, categórica, etc.), ver as médias e medianas de cada variável, os valores máximo e mínimo, entre outras informações.
+Utilizando as funções abaixo poderemos visualizar a estrutura interna dos dados (variável numérica, categórica, etc.), ver as médias e medianas de cada variável, os valores máximo e mínimo, entre outras informações.
 
 ----
 
