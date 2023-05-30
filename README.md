@@ -89,7 +89,7 @@ library(readxl) # Abrir
 
 ``` 
 
-## Vizualizar a planilha a parcela 1
+## Vizualizar a planilha da [Parcela 1](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/planilha_de_campo_parcela_1_lado_esquerdo.jpeg)
 
 ``` r
 
@@ -117,7 +117,7 @@ p1 # Vizualizar a planilha 1 parcialmente
 
 ``` 
 
-## Vizualizar a planilha 2
+## Vizualizar a planilha da [Parcela 2](https://github.com/fblpalmeira/pronta_cientista/blob/main/data/planilha_de_campo_parcela_2_lado_direito.jpeg)
 
 ``` r
 
