@@ -174,11 +174,20 @@ y # Vizualizar a planilha parcialmente
 # ℹ Use `print(n = ...)` to see more rows
 
 ```
+
+## Vizualizando a planilha inteira:
+
+Utilize o comando 'View' para visualizar a planilha inteira. Cada linha representa uma observação e cada coluna representa uma variável.
+
 ``` r
 
 View(y) # Vizualizar a planilha inteira
 
 ``` 
+Tabela 1. Planilha dos dados coletados nas parcelas 1 e 2.
+
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Planilha_parcelas_1_e_2.png"/>
+
 Agora que já temos uma única planilha com os dados coletados, iremos salvá-la em um arquivo que, posteriormente, poderá ser lido no Excel.
 É importante salvar todas as planilhas de entrada de dados e todas as figuras geradas durante as análises. 
 
