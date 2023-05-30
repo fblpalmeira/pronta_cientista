@@ -703,7 +703,7 @@ ggiNEXT(estimates) +
 # Inserir uma linha vertical tracejada na Parcela_2 e salvar a figura final  
 png(file="Figura2_Rarefacao_Parcelas_1_e_2.png", width = 1000, height = 600)
 ggiNEXT(estimates) +
-  geom_vline(xintercept = 10, lty = 2) +
+  geom_vline(xintercept = 39, lty = 2) +
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
@@ -770,7 +770,7 @@ estimates2
 # Salvar a figura 
 png(file="Figura3_Rarefacao_Simulada_Borda_e_Interior.png", width = 1000, height = 600)
 ggiNEXT(estimates2) + 
-geom_vline(xintercept = 10, lty = 2) +
+geom_vline(xintercept = 67, lty = 2) +
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) + 
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
