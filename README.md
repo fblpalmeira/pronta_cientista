@@ -635,7 +635,7 @@ ggiNEXT(estimates) +
   
 ```   
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_semm_linha.png" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_sem_linha.png" align="center" width = "800px"/>
 
 # Inserir uma linha vertical tracejada e salvar a figura 
 
