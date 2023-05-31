@@ -479,7 +479,10 @@ dev.off() # Salvar a figura
 # e o número de indivíduos contados
 
 # Abrir pacote para remodelar a tabela de dados
+install.packages("reshape2") # Instalar o pacote
 library(reshape2)
+
+# Transpor a posição da colunas Especies e Parcelas e contar o N_individuos
 y2 <- dcast(y, Especie ~ Parcela, value.var = "N_individuos")
 y2
 
@@ -614,8 +617,10 @@ Parcela_1 Parcela_2
 ``` r
 
 #Abrir pacote para fazer a interpolação e extrapolação dos dados
-# Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
+install.packages("iNEXT") # Instalar o pacote
 library(iNEXT)
+
+# Comparar as duas parcelas de amostragem (Parcela_1 e Parcela_2)
 estimates <- iNEXT(y3, datatype = "abundance", endpoint = 100)
 estimates
 
