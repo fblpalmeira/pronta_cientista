@@ -685,40 +685,73 @@ ggiNEXT(estimates) +
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
   theme_bw()+
-  theme (panel.grid.major.x = element_blank(), 
+  theme (panel.grid.major.x = element_blank(),
          panel.grid.minor.x = element_blank())+
   theme (panel.grid.major.y = element_blank(), 
          panel.grid.minor.y = element_blank())+
-  theme (axis.text.x = element_text(size=12)) +
-  theme (axis.text.y = element_text(size=12))
+  theme (axis.title.x = element_text(size=20))+ 
+  theme (axis.title.y = element_text(size=20))+
+  theme (axis.text.x = element_text(size=16))+ 
+  theme (axis.text.y = element_text(size=16))
   
 ```   
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_sem_linha.png" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_a.png" align="center" width = "800px"/>
+
+# Aumentar o tamanho da legenda
+
+``` r
+
+# Aumentar tamanho da legenda
+ggiNEXT(estimates) +
+  scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
+  scale_colour_manual(values = c("orange", "cyan")) +
+  labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
+  theme_bw()+
+  theme (panel.grid.major.x = element_blank(),
+         panel.grid.minor.x = element_blank())+
+  theme (panel.grid.major.y = element_blank(), 
+         panel.grid.minor.y = element_blank())+
+  theme (axis.title.x = element_text(size=20))+ 
+  theme (axis.title.y = element_text(size=20))+
+  theme (axis.text.x = element_text(size=16))+ 
+  theme (axis.text.y = element_text(size=16))+
+  theme (legend.key.size = unit(1, 'cm'), # Altera o tamanho da chave da legenda
+         legend.key.height = unit(1, 'cm'), # Altera a altura da chave da legenda
+         legend.key.width = unit(1, 'cm'), # Altera a largura da chave da legenda
+         legend.text = element_text(size=16))+ # Altera o tamanho da fonte do texto da legenda
+dev.off()
+
+``` 
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_b.png" align="center" width = "800px"/>
 
 # Inserir uma linha vertical tracejada e salvar a figura 
 
 ``` r
 
 # Inserir uma linha vertical tracejada na Parcela_2 e salvar a figura final  
-png(file="Figura2_Rarefacao_Parcelas_1_e_2.png", width = 1000, height = 600)
 ggiNEXT(estimates) +
   geom_vline(xintercept = 39, lty = 2) +
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
   theme_bw()+
-  theme (panel.grid.major.x = element_blank(), 
+  theme (panel.grid.major.x = element_blank(),
          panel.grid.minor.x = element_blank())+
   theme (panel.grid.major.y = element_blank(), 
          panel.grid.minor.y = element_blank())+
-  theme (axis.text.x = element_text(size=12)) +
-  theme (axis.text.y = element_text(size=12))
-dev.off()
+  theme (axis.title.x = element_text(size=20))+ 
+  theme (axis.title.y = element_text(size=20))+
+  theme (axis.text.x = element_text(size=16))+ 
+  theme (axis.text.y = element_text(size=16))+
+  theme (legend.key.size = unit(1, 'cm'), 
+        legend.key.height = unit(1, 'cm'), 
+        legend.key.width = unit(1, 'cm'), 
+        legend.text = element_text(size=14))
 
 ``` 
 
-<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_com_linha.png" align="center" width = "800px"/>
+<img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/Figura2_Rarefacao_Parcelas_1_e_2_c.png" align="center" width = "800px"/>
 
 ----
 
