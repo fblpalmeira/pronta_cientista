@@ -576,11 +576,11 @@ y3
 
 ``` 
 
-## Informar os nomes da espécies 
+## Informar os nomes das espécies 
 
 ``` r
 
-# Informar os nomes da espécies 
+# Informar os nomes das espécies 
 row.names(y3) <- y2[,1]
 y3
 
@@ -735,8 +735,8 @@ dev.off()
 ``` r
 
 # Inserir uma linha vertical tracejada na Parcela_2 e salvar a figura final  
-ggiNEXT(estimates) +
-  geom_vline(xintercept = 39, lty = 2) +
+ggiNEXT(estimates) + 
+  geom_vline(xintercept = 39, lty = 2) + # Insere a linha vertical
   scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +  
   scale_colour_manual(values = c("orange", "cyan")) +
   labs(x = "Número de indivíduos", y = " Riqueza de espécies")+
@@ -795,7 +795,7 @@ y7
 y8 <- as.matrix(apply(y7[,-1],2,as.integer))
 str(y8)
 
-# Informar que os nomes da espécies 
+# Informar que os nomes das espécies 
 row.names(y8) <- y7[,1]
 
 # Contar o número de indivíduos por parcela
