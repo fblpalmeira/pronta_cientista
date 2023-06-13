@@ -34,7 +34,7 @@ Durante o trabalho de campo, cada grupo de trabalho amostrou uma parcela de 30 x
 
 Figura 2.  Localização das parcelas amostradas na Floresta da USP em Ribeirão Preto.
 
-No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as parcelas amostradas no campo. Os dados simulados serão utilizados para testar se existe diferença significativa entre a riqueza e a abundância de indivíduos na borda e no interior da floresta.
+No laboratório, iremos simular os dados de amostragem de mais 10 parcelas na Floresta, totalizando seis parcelas no interior e seis na borda, incluindo as parcelas amostradas no campo. Os dados simulados serão utilizados para testar se existiu diferença significativa entre a riqueza e a abundância de indivíduos na borda e no interior da floresta.
 
 <img src="https://github.com/fblpalmeira/pronta_cientista/blob/main/data/area_de_estudo_parcelas_simuladas.png" align="center" width = "800px"/>
 
