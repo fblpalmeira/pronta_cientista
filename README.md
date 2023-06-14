@@ -24,7 +24,7 @@ A comunidade R é muito amigável e as pessoas que fazem parte desta comunidade 
  
 ## Prática 
 
-O objetivo desta aula prática é construir um gráfico que representa a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP em Ribeirão Preto, SP.
+O objetivo desta aula prática é construir um gráfico para visualizar a riqueza e a abundância de espécies vegetais utilizando os dados coletados durante o nosso trabalho de campo na Floresta da USP em Ribeirão Preto, SP.
 
 Durante o trabalho de campo, cada grupo de trabalho amostrou uma parcela de 30 x 30 metros no interior da Floresta, uma do lado esquerdo e a outra do lado direito, com uma distância de aproximadamente 30 metros entre as parcelas. A amostragem durou cerca de 30 minutos em cada parcela.
 
